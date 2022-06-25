@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100&;400;500&display=swap");
+
+@import url(navbar.css);
+@import url(footer.css);
+@import url(modal-vent.css);
+@import url(miembros.css);
+@import url(nosotros.css);
+@import url(proyectos.css);
+
+:root {
+  --color-rose-red: #bc0653;
+  --color-dark: #000000;
+  --color-blue-dark-osc: #011d49;
+  --color-tumbleweed: #e3b5a4;
+  --color-negro: rgb(0, 0, 0);
+  --color-blanco: rgb(255, 255, 255);
+  --color-background: #267ba8;
+
+  --fuente-1: "Signika Negative", sans-serif;
+  --fuente-2: "Noto Sans SC", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  margin: 0;
+}
+
+.index {
+  background-image: url(https://miro.medium.com/max/3000/1*iGdFJTHMIG79N2HChWaooQ.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.item {
+  height: 100vh;
+}
+
+
+
