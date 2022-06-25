@@ -37,14 +37,6 @@ footer{
     .content>img{
         width: 50%;
     }
-    .social{
-        justify-content: center;
-        padding: 30px 20px 0 20px;
-    }
-        .social a{
-            color: var(--color-vino);   
-            background-color: var(--color-blanco);
-        }
     .bottom .legend__ftt{
         display: block;
         font-size: .7rem;

@@ -7,6 +7,7 @@
 @import url(miembros.css);
 @import url(nosotros.css);
 @import url(proyectos.css);
+@import url(login.css);
 
 :root {
   --color-rose-red: #bc0653;
@@ -76,3 +77,4 @@ main .sobre-nosotros{
   left: 1470px;
   top: 101px;
 }
+
