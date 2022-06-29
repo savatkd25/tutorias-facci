@@ -10,7 +10,7 @@
 @import url(login.css);
 @import url(docente.css);
 @import url(estudiante.cs);
-
+@import url(actividades.css);
 :root {
   --color-rose-red: #bc0653;
   --color-dark: #000000;
