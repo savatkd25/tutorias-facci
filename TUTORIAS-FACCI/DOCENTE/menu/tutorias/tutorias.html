@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/tutoria.css">
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="../../style/footer.css">
+    <link rel="stylesheet" href="../../style/nav.css">
+    <script src="../../js/tutoria.js"></script>
+    <title>TUTORIAS</title>
+</head>
+<body>
+    <header class="only-header">
+        <nav class="nav_bar-cipt">
+            <div class="logo">
+                <a class="marca-logo">
+                    <img src="../../Imagenes/logo_.png" alt="Logo FACCI">
+                </a>
+            </div>
+            <button class="btn-menu active">IC</button>
+            <div class="option-navBar active">
+                <div class="container-items">
+                    <a class="items_navBar active">INICIO</a>
+                    <a href="/TUTORIAS-FACCI/LOGIN/login-inicio.html" class="items_navBar active" id="login-item">INICIO DE SESION</a>
+                </div>
+           </div>
+        </nav>
+    </header>
+    <section class="content-activities">
+        <div class="title-activities">
+            <h1>Registro de tutorías</h1>
+        </div>
+        <div class="form-activities" id="formulario">
+            <!--Tema-->
+            <div class="content-form tema">
+                <input type="text" name="Tema" placeholder="Temas" class="formulario-input" id="tema" required>
+            </div>
+            <!--Horas de trabajo-->
+            <div class="content-form time">
+                <input type="text" name="time" placeholder="Horas de trabajo" class="formulario-input" id="horas">
+            </div>
+            <!--Tareas asignadas-->
+            <div class="content-form tareas">
+                <input type="text" name="tarea" placeholder="Tareas asignadas" class="formulario-input" id="tareas">
+            </div>
+             <!--Grupo-->
+             <div class="content-form group">
+                <form class="form">
+                    <div class="form-group">
+                        <label for="group"></label>
+                        <select name="idGrupo" id="id-grupo" class="group">
+                            <option value="">Grupos<i class="fa-solid fa-angle-down"></i></option>
+                            <option value="Grupo 1">Grupo 1</option>
+                            <option value="Grupo 2">Grupo 2</option>
+                            <option value="Grupo 3">Grupo 3</option>
+                            <option value="Grupo 4">Grupo 4</option>
+                            <option value="Grupo 5">Grupo 5</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <!--Fecha de tutoría-->
+            <div class="content-form date">
+                <input type="date" name="date" id="date"  class="formulario-input" required>
+                <img src="../../Imagenes/calendar--v3.png" alt="calendar">
+            </div>
+            <!--Próxima tutoría-->
+            <div class="content-form proxdate">
+                <input type="date" name="proxdate" id="proxdate"  class="formulario-input" required>
+                <img src="../../Imagenes/calendar--v3.png" alt="calendar">
+            </div>
+            <!--Observaciones-->
+            <div class="content-form observaciones">
+                <input type="text" name="observation" placeholder="Observaciones" class="formulario-input" id="observaciones">
+            </div>
+            <!--Tipo de tutoría-->
+            <div class="content-form select">
+                <form action="" class="form-select">
+                    <div class="type" id="type-tutoria">
+                        <h2>Tipo de tutoría</h2>
+                        <div class="select-type">
+                            <div class="content-select">
+                                <input type="checkbox" name="presencial" id="select-presencial" class="select-tutoria">
+                                <label for="select-presencial" class="label-presencial">Presencial</label>
+                            </div>
+                            <div class="content-select">
+                                <input type="checkbox" name="virtual" id="select-virtual"class="select-tutoria">
+                                <label for="select-virtual" class="label-virtual">Virtual</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="type" id="type-time">
+                        <h2>Tiempo de tutoría</h2>
+                        <div class="select-type">
+                            <div class="content-select">
+                                <input type="checkbox" name="total" id="select-total"class="select-time">
+                                <label for="select-total" class="label-total">Total</label>
+                            </div>
+                            <div class="content-select">
+                                <input type="checkbox" name="parcial" id="select-parcial" class="select-time">
+                                <label for="select-parcial" class="label-parcial">Parcial</label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!--botones-->         
+            <div class="action-button">
+                <div class="button-cont confirmar">
+                    <input type="submit" name="confirmar" value="confirmar" class="button" id="button-send" onclick="return enviarformulario();" >
+                </div>
+                
+                <div class="button-cont regresar">
+                    <a href="../menuD.html">
+                        <input type="button" name="regresar" value="Regresar" class="button" id="button-back">
+                    </a>
+                   
+                </div>
+            </div>
+        </div>
+        <div id="error"></div>
+    </section>
+    <footer>
+        <div class="grid-ftt">
+            <div class="box column_grid-ftt">
+                <div class="content">
+                    <img src="../../Imagenes/logo_.png" alt="Logo ULEAM">
+                </div>
+            </div>
+            <div class="box column_grid-ftt">
+                <div class="content">
+                    <div>
+                        <p class="text">ULEAM © Copyright 2022, Todos los derechos reservados - Universidad Laica Eloy Alfaro de Manabí <br>
+Dirección: Av. Circunvalación - Vía a San Mateo
+Manta - Manabí - Ecuador</p>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </footer>        
+</body>
+</html>
