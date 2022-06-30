@@ -50,7 +50,7 @@ a button{
     transition: .2s;
 }
 a button:hover{
-    background-color: rgb(17, 150, 150);
+    background-color: rgb(166, 202, 118);
     width: 115px;
     height: 55px;
     transition: .2s;
