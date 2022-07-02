@@ -1,0 +1,133 @@
+body{
+    background: #dbdbdb;
+    margin: 0;
+    
+}
+.pantalla-d
+{
+    display: flex;
+    background-position: 100%;
+    
+}
+.izquierda{
+    background: #503db9;
+    width: 55%;
+    background-position: center;
+    font-size:x-large;
+    display: grid;
+}
+
+p img{
+    height: 35px;
+    width: 35px;
+    display: flex;
+    background-position: auto;
+}
+.derecha{
+    background: #4e8cbe;
+    width: 45%; 
+	display: grid;
+    background-position: 100%;
+    
+}
+.pngnombre{
+    height: 300px;
+    width: 300px;
+    background-position: center;
+    margin: auto;
+    position: relative;
+    top: 100px;
+    left: 0px;
+    font-size:x-large;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    display: inline-flex;
+    padding: 15px;
+    margin: auto;
+}
+
+header{
+    display: flex;
+    height: 75px;
+    background-color: #eeeeee;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+p{
+    font-size: 30px;
+  width: 50%;
+  margin: auto;
+  display: inline-block;
+}
+img{
+    width: 50%;
+    margin: auto;
+
+  }
+.botonr{
+    position: relative;
+    top:30px;
+    left: 600px;
+}
+
+.LogoUleam{
+    display: flex;
+}
+.LogoUleam img{
+    margin-left: 40px;
+    height: 80px;
+    width: 285px;
+}
+
+a button{
+    color: white;
+    background-color: rgb(18, 11, 122);
+    border-radius: 10px;
+    width: 110px;
+    height: 50px;
+    cursor: pointer;
+    margin-right: 40px;
+    border-color: none;
+    transition: .2s;
+    position: relative;
+
+}
+a button:hover{
+    background-color: rgb(17, 150, 150);
+    width: 115px;
+    height: 55px;
+    transition: .2s;
+}
+
+footer{
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 170px;
+    background-color: #232325;
+    padding-top: 30px;
+    align-items: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.navv a{
+    text-decoration: none;
+    color: rgb(231, 228, 228);
+    display:contents;
+    padding: 15px;
+    margin: auto;
+    text-align: center;
+    cursor: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
