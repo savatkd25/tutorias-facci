@@ -10,10 +10,12 @@
     <link rel="stylesheet" href="css/actualizar.css" type="text/css">
     <link rel="stylesheet" href="css/revisar.css" type="text/css">
     <link rel="stylesheet" href="css/borrar.css" type="text/css">
-    <!--link rel="stylesheet" href="../GestiEstudiante/css/footer.css">
+    <!-- encabezado e derechos de autor -->
+    <link rel="stylesheet" href="../GestiEstudiante/css/footer.css">
     <link rel="stylesheet" href="../GestiEstudiante/css/nav.css">
     <link rel="stylesheet" href="../GestiEstudiante/css/menu.css">
-    <link rel="stylesheet" href="../GestiEstudiante/css/style.css"-->
+    <link rel="stylesheet" href="../GestiEstudiante/css/style.css">
+    <!------------------------------------>
     <script src="js/agregar.js" type="text/javascript"></script>
     <script src="js/actualizar.js" type="text/javascript"></script>
     <script src="js/revisar.js" type="text/javascript"></script>
@@ -40,6 +42,10 @@
         <div id="second">
             <button id="add" onclick="add()">Agregar</button>
             <button id="del" onclick="del()">Eliminar</button>
+            <!--button id="volver" onclick="volver()">Regresar</button-->
+            <a href="../menuD.html">
+                <button id="volver">Regresar</button>
+            </a> 
         </div>
 
         <!-- datos del estudiante -->
@@ -64,18 +70,18 @@
         </div>
     </div>
     <!-- encabezado principal con botones -->
-    <!--header class="only-header">
+    <!-- header class="only-header">
         <nav class="nav_bar-cipt">
             <div class="logo">
                 <a class="marca-logo">
-                    <img src="/DOCENTE/Imagenes/logo_.png" alt="Logo FACCI">
+                    <img src="./img/logo_.png" alt="Logo FACCI">
                 </a>
             </div>
             <button class="btn-menu active">IC</button>
             <div class="option-navBar active">
                 <div class="container-items">
-                    <a class="items_navBar active">INICIO</a>
-                    <a href="/TUTORIAS-FACCI/LOGIN/login-inicio.html" class="items_navBar active" id="login-item">DOCENTE</a>
+                    <a href="../menuD.html" class="items_navBar active" id="login-item">REGRESAR</a>
+                    <a href="/TUTORIAS/LOGIN/login-inicio.html" class="items_navBar active" id="login-item">DOCENTE</a>
                 </div>
            </div>
         </nav>
@@ -220,11 +226,11 @@
     </div>
     
     <!-- footer de derechos de autor para la página -->
-    <!--footer>
+    <footer>
         <div class="grid-ftt">
             <div class="box column_grid-ftt">
                 <div class="content">
-                    <img src="../GestiEstudiante/img/logo_.png" alt="Logo ULEAM">
+                    <img src="./img/logo_.png" alt="Logo ULEAM">
                 </div>
             </div>
             <div class="box column_grid-ftt">
@@ -237,7 +243,7 @@ Manta - Manabí - Ecuador</p>
                 </div>
             </div>
        </div>
-    </footer-->
+    </footer>
 </body>
 
 </html>

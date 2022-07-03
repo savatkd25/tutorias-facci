@@ -3,6 +3,9 @@ footer{
     background-color: var(--color-dark);
     margin-top: 5px;
     font-family: var(--fuente-1);
+    position: absolute;
+    bottom: 0;
+    /*margin-top: auto;*/
 }
 
 /* grid para dividir apartados */
@@ -13,8 +16,9 @@ footer{
     grid-column-gap: 50px;
     color: var(--color-blanco);
 }
+/* logo de la U, pero reducida por el tamaño que ocupa el footer */
 .content>img{
-    width: 250px;
+    width: 150px;
 }
 
 

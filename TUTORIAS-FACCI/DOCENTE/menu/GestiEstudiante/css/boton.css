@@ -6,6 +6,17 @@
     color: white;
     border: 1px solid black;
 }
+#volver
+{
+    /*padding-left: 20px;
+    padding-right: 20px;*/
+    height: 30px;
+    width: 75px;
+    background-color: #929292;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
 #del
 {
     height: 30px;
