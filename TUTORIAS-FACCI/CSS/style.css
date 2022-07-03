@@ -11,6 +11,8 @@
 @import url(docente.css);
 @import url(estudiante.cs);
 @import url(actividades.css);
+@import url(login-studen.css);
+@import url(login-teacher.css);
 :root {
   --color-rose-red: #bc0653;
   --color-dark: #000000;
