@@ -1,3 +1,4 @@
+/* Cabecera*/
 header{
     display: flex;
     height: 75px;
@@ -7,7 +8,15 @@ header{
     padding: 10px;
 }
 
-.Actividades .Titulo-Actividades{
+/*Body*/
+body{
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+}
+
+/*Titulo*/
+.Titulo-Actividades{
     text-align: center;
     font-size: 30px;
 }
@@ -21,7 +30,160 @@ a{
     text-align: center;
 }
 
+.Contenedores{
+    margin-top: 350px;
+}
 
+/*Inputs*/
+
+input{
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+/*Contenedores*/
+/*--------------------------------------------------*/
+/*Contenedor 1*/
+.Contenedores .Contenedor-1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    widows: 500px;
+    transform: translate(-50%, -150%);
+}
+
+.Contenedor-1 input[type="text"]
+{
+    background: rgb(255, 170, 0);
+    width: 640px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    margin-right: 340px;
+}
+
+.Contenedor-1 input[type="submit"]
+{
+    color: white;
+    background-color: rgb(190, 20, 247);
+    position: relative;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    top: -50px;
+    left: 680px;
+}
+
+/*Contenedor 2*/
+.Contenedores .Contenedor-2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    widows: 500px;
+    transform: translate(-50%, -75%);
+}
+
+.Contenedor-2 input[type="text"]
+{
+    background: rgb(255, 170, 0);
+    width: 640px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    margin-right: 340px;
+}
+
+.Contenedor-2 input[type="submit"]
+{
+    color: white;
+    background-color: rgb(190, 20, 247);
+    position: relative;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    top: -50px;
+    left: 680px;
+}
+
+/*Contenedor 3*/
+.Contenedores .Contenedor-3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    widows: 500px;
+    transform: translate(-50%, 0%);
+}
+
+.Contenedor-3 input[type="text"]
+{
+    background: rgb(255, 170, 0);
+    width: 640px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    margin-right: 340px;
+}
+
+.Contenedor-3 input[type="submit"]
+{
+    color: white;
+    background-color: rgb(190, 20, 247);
+    position: relative;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    top: -50px;
+    left: 680px;
+}
+
+/*Contenedor 4*/
+.Contenedores .Contenedor-4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    widows: 500px;
+    transform: translate(-50%, 75%);
+}
+
+.Contenedor-4 input[type="text"]
+{
+    background: rgb(255, 170, 0);
+    width: 640px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    margin-right: 340px;
+}
+
+.Contenedor-4 input[type="submit"]
+{
+    color: white;
+    background-color: rgb(190, 20, 247);
+    position: relative;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    top: -50px;
+    left: 680px;
+}
+/*------------------------------------------------------*/
+
+/*Background input type=submit*/
+input[type="submit"]:hover
+{
+    color: white;
+    background-color: rgb(17, 150, 150);;
+}
+
+
+/*
 .Contenedores .Contenedor-1{
     margin-top: 20px;
     margin-left: 225px;
@@ -74,8 +236,8 @@ a{
     margin-top: -15px;
     border-color: none;
     transition: .2s;
-}
-
+}*/
+/*
 .Contenedores .Contenedor-3{
     margin-top: 30px;
     margin-left: 225px;
@@ -129,6 +291,9 @@ a{
     border-color: none;
     transition: .2s;
 }
+*/
+
+
 
 .Contenedor-Regresar button{
     color: white;
@@ -168,7 +333,7 @@ a button{
     height:60px;
     width: 190px;
 }
-
+/*Boton Regresar*/
 a button:hover{
     background-color: rgb(17, 150, 150);
     width: 115px;
@@ -176,6 +341,7 @@ a button:hover{
     transition: .2s;
 }
 
+/*footer*/
 footer{
     display: flex;
     bottom: 0;
