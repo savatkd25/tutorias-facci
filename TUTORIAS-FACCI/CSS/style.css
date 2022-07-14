@@ -13,6 +13,11 @@
 @import url(actividades.css);
 @import url(login-studen.css);
 @import url(login-teacher.css);
+@import url(EstilosD.css);
+@import url(estilos.css);
+@import url(EstilosAE2.css);
+@import url(EstilosAE1.css);
+
 :root {
   --color-rose-red: #bc0653;
   --color-dark: #000000;
