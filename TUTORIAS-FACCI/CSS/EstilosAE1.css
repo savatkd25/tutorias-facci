@@ -1,14 +1,24 @@
-body{
-    font-family: sans-serif;
-    background: #dbdbdb;
-    margin: 0;
-    
+/* Cabecera*/
+header{
+    display: flex;
+    height: 75px;
+    background-color: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
 
-.Actividades{
+/*Body*/
+body{
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+}
+
+/*Titulo*/
+.Titulo-Actividades{
     text-align: center;
     font-size: 30px;
-    margin-top: 45px;
 }
 
 a{
@@ -20,13 +30,294 @@ a{
     text-align: center;
 }
 
-header{
+.Contenedores{
+    margin-top: 350px;
+}
+
+/*Inputs*/
+
+input{
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+/*Contenedores*/
+/*--------------------------------------------------*/
+/*Contenedor 1*/
+.Contenedores .Contenedor-1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    widows: 500px;
+    transform: translate(-50%, -150%);
+}
+
+.Contenedor-1 input[type="text"]
+{
+    background: rgb(255, 170, 0);
+    width: 640px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    margin-right: 340px;
+}
+
+.Contenedor-1 input[type="submit"]
+{
+    color: white;
+    background-color: rgb(190, 20, 247);
+    position: relative;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    top: -50px;
+    left: 680px;
+}
+
+/*Contenedor 2*/
+.Contenedores .Contenedor-2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    widows: 500px;
+    transform: translate(-50%, -75%);
+}
+
+.Contenedor-2 input[type="text"]
+{
+    background: rgb(255, 170, 0);
+    width: 640px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    margin-right: 340px;
+}
+
+.Contenedor-2 input[type="submit"]
+{
+    color: white;
+    background-color: rgb(190, 20, 247);
+    position: relative;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    top: -50px;
+    left: 680px;
+}
+
+/*Contenedor 3*/
+.Contenedores .Contenedor-3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    widows: 500px;
+    transform: translate(-50%, 0%);
+}
+
+.Contenedor-3 input[type="text"]
+{
+    background: rgb(255, 170, 0);
+    width: 640px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    margin-right: 340px;
+}
+
+.Contenedor-3 input[type="submit"]
+{
+    color: white;
+    background-color: rgb(190, 20, 247);
+    position: relative;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    top: -50px;
+    left: 680px;
+}
+
+/*Contenedor 4*/
+.Contenedores .Contenedor-4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    widows: 500px;
+    transform: translate(-50%, 75%);
+}
+
+.Contenedor-4 input[type="text"]
+{
+    background: rgb(255, 170, 0);
+    width: 640px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    margin-right: 340px;
+}
+
+.Contenedor-4 input[type="submit"]
+{
+    color: white;
+    background-color: rgb(190, 20, 247);
+    position: relative;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    top: -50px;
+    left: 680px;
+}
+/*------------------------------------------------------*/
+
+/*Background input type=submit*/
+input[type="submit"]:hover
+{
+    color: white;
+    background-color: rgb(17, 150, 150);;
+}
+
+
+/*
+.Contenedores .Contenedor-1{
+    margin-top: 20px;
+    margin-left: 225px;
+    margin-bottom: 50px;
+    background: #ffc400d6;
     display: flex;
-    height: 75px;
-    background-color: #eeeeee;
-    justify-content: space-between;
+    width: 54%;
+    height: 50px;
     align-items: center;
-    padding: 10px;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.Contenedor-1 button{
+    color: white;
+    background-color: rgb(190, 20, 247);
+    border-radius: 5px;
+    width: 110px;
+    height: 50px;
+    cursor: pointer;
+    margin-left: 1000px;
+    margin-top: -15px;
+    border-color: none;
+    transition: .2s;
+}
+
+.Contenedores .Contenedor-2{
+    margin-top: 30px;
+    margin-left: 225px;
+    margin-bottom: 50px;
+    background: #ffc400d6;
+    display: flex;
+    width: 54%;
+    height: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.Contenedor-2 button{
+    color: white;
+    background-color: rgb(190, 20, 247);
+    border-radius: 5px;
+    width: 110px;
+    height: 50px;
+    cursor: pointer;
+    margin-left: 1000px;
+    margin-top: -15px;
+    border-color: none;
+    transition: .2s;
+}*/
+/*
+.Contenedores .Contenedor-3{
+    margin-top: 30px;
+    margin-left: 225px;
+    margin-bottom: 50px;
+    background: #ffc400d6;
+    display: flex;
+    width: 54%;
+    height: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.Contenedor-3 button{
+    color: white;
+    background-color: rgb(190, 20, 247);
+    border-radius: 5px;
+    width: 110px;
+    height: 50px;
+    cursor: pointer;
+    margin-left: 1000px;
+    margin-top: -15px;
+    border-color: none;
+    transition: .2s;
+}
+
+.Contenedores .Contenedor-4{
+    margin-top: 30px;
+    margin-left: 225px;
+    margin-bottom: 25px;
+    background: #ffc400d6;
+    display: flex;
+    width: 54%;
+    height: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.Contenedor-4 button{
+    color: white;
+    background-color: rgb(190, 20, 247);
+    border-radius: 5px;
+    width: 110px;
+    height: 50px;
+    cursor: pointer;
+    margin-left: 1000px;
+    margin-top: -15px;
+    border-color: none;
+    transition: .2s;
+}
+*/
+
+
+
+.Contenedor-Regresar button{
+    color: white;
+    background-color: rgb(190, 20, 247);
+    border-radius: 5px;
+    width: 120px;
+    height: 60px;
+    cursor: pointer;
+    margin-left: 680px;
+    margin-bottom: 15px;
+    border-color: none;
+    transition: .2s;
+    font-size: 20px;
+}
+
+a button{
+    color: white;
+    background-color: rgb(18, 11, 122);
+    border-radius: 5px;
+    width: 110px;
+    height: 50px;
+    cursor: pointer;
+    border-color: none;
+    transition: .2s;
 }
 
 .LogoUleam{
@@ -38,26 +329,21 @@ header{
     width: 285px;
 }
 
-a button{
-    color: white;
-    background-color: rgb(18, 11, 122);
-    border-radius: 5px;
-    width: 110px;
-    height: 50px;
-    cursor: pointer;
-    margin-right: 40px;
-    border-color: none;
-    transition: .2s;
+.LogoUleam2 img{
+    align-content: center;
+    height:60px;
+    width: 190px;
 }
+/*Boton Regresar*/
 a button:hover{
-    background-color: rgb(166, 202, 118);
-    width: 115px;
-    height: 55px;
+    background-color: rgb(17, 150, 150);
+    width: 120px;
+    height: 60px;
     transition: .2s;
 }
 
+/*footer*/
 footer{
-    position: absolute;
     display: flex;
     bottom: 0;
     left: 0;
@@ -72,12 +358,6 @@ footer{
     justify-content:center;
     flex-direction: column;
     text-align: center;
-}
-
-.LogoUleam2 img{
-    align-content: center;
-    height:60px;
-    width: 190px;
 }
 
 .navv a{
