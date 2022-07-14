@@ -5,6 +5,7 @@
     background-color: #5cb85c;
     color: white;
     border: 1px solid black;
+    border-radius: 5px;
 }
 #volver
 {
@@ -16,6 +17,7 @@
     color: white;
     border: 1px solid black;
     border-radius: 5px;
+    margin-left: 5px;
 }
 #del
 {
@@ -25,25 +27,28 @@
     color: white;
     border: 1px solid black;
     margin-left: 5px;
+    border-radius: 5px;
 }
 #previous
 {
-    height: 30px;
+    height: 35px;
     width: 75px;
     background-color: #5cb85c;
     color: white;
     border: 1px solid black;
     float: right;
+    border-radius: 5px;
 }
 #next
 {
-    height: 30px;
+    height: 35px;
     width: 75px;
     background-color: #d9534f;
     color: white;
     border: 1px solid black;
     margin-left: 5px;
     float: right;
+    border-radius: 5px;
 }
 #examine
 {

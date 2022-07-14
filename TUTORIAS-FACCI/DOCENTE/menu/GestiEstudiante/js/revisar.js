@@ -11,7 +11,7 @@ function examine(obj) {
     document.getElementById('materia3').value = iTds[4].innerText;
     document.getElementById('nivel3').value = iTds[5].innerText;
     document.getElementById('paralelo3').value = iTds[6].innerText;
-    document.getElementById('edad3').value = iTds[7].innerText;
+    document.getElementById('email3').value = iTds[7].innerText;
     document.getElementById('fecha3').value = iTds[8].innerText;
 }
 

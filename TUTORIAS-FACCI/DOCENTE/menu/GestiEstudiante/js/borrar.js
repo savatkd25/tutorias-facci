@@ -1,3 +1,4 @@
+// esta función es para el checker de los recuadros con información.
 function checkAll(obj){
     var status = obj.checked;
     var items = document.getElementsByName('item');
@@ -8,8 +9,8 @@ function checkAll(obj){
     }
 }
 
+// función que funciona para borrar contenido de una fila generada.
 function del() {
-    
     document.getElementById('delBlock').style.display = 'block';
     document.getElementById('totalBackground').style.display = 'block';
 
@@ -27,7 +28,7 @@ function del() {
     delNode.innerText = message.join('\t');
 }
 
-
+// función para el botón confirmar del cual borarrá los datos de los estudiantes en la fila registrada.
 function confirm() {
     document.getElementById('delBlock').style.display = 'none';
     document.getElementById('totalBackground').style.display = 'none';

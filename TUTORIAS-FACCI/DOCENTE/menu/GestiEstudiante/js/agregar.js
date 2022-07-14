@@ -16,7 +16,7 @@ function sumbit() {
     var materia = document.getElementById('materia1').value;
     var nivel = document.getElementById('nivel1').value;
     var paralelo = document.getElementById('paralelo1').value;
-    var edad = document.getElementById('edad1').value;
+    var email = document.getElementById('email1').value;
     var fecha = document.getElementById('fecha1').value;
     var nums = iTable.rows.length;
     var iTr = document.createElement('tr');
@@ -62,7 +62,7 @@ function sumbit() {
     iTd7.appendChild(document.createTextNode(paralelo));
     var iTd8 = document.createElement('td');
     iTd8.className = "col8";
-    iTd8.appendChild(document.createTextNode(edad));
+    iTd8.appendChild(document.createTextNode(email));
     var iTd9 = document.createElement('td');
     iTd9.className = "col9";
     iTd9.appendChild(document.createTextNode(fecha));
@@ -71,12 +71,12 @@ function sumbit() {
     var examine = document.createElement('input');
     examine.id = 'examine';
     examine.setAttribute('type','button');
-    examine.setAttribute('value','Revisar');
+    examine.setAttribute('value','Ver /');
     examine.setAttribute('onclick','examine(this)');
     var update = document.createElement('input');
     update.id = 'update';
     update.setAttribute('type','button');
-    update.setAttribute('value','Editar');
+    update.setAttribute('value',' Editar');
     update.setAttribute('onclick','update(this)');
     iTd10.appendChild(examine);
     iTd10.appendChild(update);
@@ -99,7 +99,7 @@ function sumbit() {
     document.getElementById('materia1').value = null;
     document.getElementById('nivel1').value = null;
     document.getElementById('paralelo1').value = null;
-    document.getElementById('edad1').value = null;
+    document.getElementById('email1').value = null;
     document.getElementById('fecha1').value = null;
 
     document.getElementById('nums').innerText = nums;
