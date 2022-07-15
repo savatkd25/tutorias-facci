@@ -1,12 +1,16 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+html {
+    min-height: 100%;
+    position: relative;
+  }
+
 body{
     font-family: sans-serif;
     background: #dbdbdb;
     margin: 0;
+    overflow-y: auto;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 a{
@@ -20,6 +24,7 @@ a{
 
 header{
     display: flex;
+    position: sticky;
     height: 75px;
     background-color: #eeeeee;
     justify-content: space-between;
@@ -53,24 +58,25 @@ a button:hover{
     transition: .2s;
 }
 
-.cuerpo{
+div .cuerpo{
     font-family: sans-serif;
-    margin-left: 60px;
-    padding-top: 60px;
-    padding-left: 80px;
+    display:flex;
 }
 .cuerpo h1{
-    margin-left: 110px;
-    padding-top: -10px;
+    padding-top: 0px;
     font-size: 40px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 .menu{
-    padding-top: 35px;
-    margin-left: 65px;
+    display: flex;
+    padding-top: 40px;
+    gap: 35px;
     align-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 .menu button{
-    margin-left: 40px;
     width: 250px;
     height: 180px;
     border-radius: 10px;
@@ -86,21 +92,13 @@ a button:hover{
     transition: .2s;
 }
 footer{
-    position: absolute;
-    display: flex;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 170px;
     background-color: #232325;
-    padding-top: 30px;
-    align-items: center;
-    color: white;
-    display: flex;
+    padding-top: 12px;
     align-items: center;
     justify-content:center;
-    flex-direction: column;
+    flex-direction:column;
     text-align: center;
+    margin-top: auto;
 }
 
 .logo2 img{
