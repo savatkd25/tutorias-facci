@@ -17,6 +17,17 @@
 @import url(estilos.css);
 @import url(EstilosAE2.css);
 @import url(EstilosAE1.css);
+@import url(activDocnt.css);
+@import url(menu.css);
+@import url(tutoria.css);
+@import url(revisar.css);
+@import url(nav.css);
+@import url(main.css);
+@import url(actualizar.css);
+@import url(agregar.css);
+@import url(borrar.css);
+@import url(boton.css);
+
 
 :root {
   --color-rose-red: #bc0653;
