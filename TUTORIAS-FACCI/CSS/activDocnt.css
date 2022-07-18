@@ -1,0 +1,99 @@
+.activities{
+    margin: 120px 40px;
+    height: 300px;
+}
+.title-activities{
+    font-family: "Signika Negative", sans-serif;
+    margin: auto;
+    height: 80px;
+    width: auto;
+}
+.title-activities h1{
+    text-align: center;
+    font-size: 200%;
+    padding: 20px;
+}
+.formulario{
+    width: 100%;
+}
+.form-activities{
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    padding: auto;
+    align-content: space-around;
+}
+.formulario__grupo{
+    margin: 5px;
+    float: left;
+}
+.formulario__grupo-input{
+    cursor: pointer;
+    width: 100%;
+}
+.formulario-input{
+    width: 100%;
+    background-color: rgb(252, 207, 59);
+    border: 1px solid rgb(252, 207, 59);
+    font-family: "Noto Sans SC", sans-serif;
+    line-height: 50px;
+    margin: 10px;
+    padding: 0 20px;
+}
+.formulario__input-error{
+    font-family: "Noto Sans SC", sans-serif;
+    margin: 0 20px;
+    font-size: 15px;
+}
+#tarea{
+    width: 450px;
+}
+#correccion{
+    width: 350px;
+}
+
+#grupo__observaciones{
+    position:relative;
+}
+#observaciones{
+    width: 260px;
+    height: 150px;
+}
+
+#grupo__date{
+    position: absolute;
+    top: 100px;
+}
+#date{
+    width: 250px;
+}
+
+#grupo__group{
+    position: absolute;
+    top: 110px;
+    left: 510px;
+}
+#select{
+    width: 250px;
+    height: 50px;
+}
+#grupo__button{
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    justify-content: center;
+}
+.formulario__grupo-button{
+    margin: 20px;
+
+}
+.formulario-button{
+    font-family: "Signika Negative", sans-serif;
+    background-color: rgb(66, 6, 122);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    width: 90px;
+    height: 50px;
+    border-radius: 15%;
+    margin: 20px;
+}
