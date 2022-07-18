@@ -5,25 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--<link rel="stylesheet" href="/TUTORIAS-FACCI/CSS/style.css">-->
+    <link rel="stylesheet" href="/TUTORIAS-FACCI/CSS/style.css">
     <link rel="stylesheet" href="/TUTORIAS-FACCI/CSS/tutoria.css">
     <script src="../../js/tutoria.js"></script>
     <title>TUTORIAS</title>
 </head>
 <body>
-    <header class="only-header">
-        <nav class="nav_bar-cipt">
-            <div class="logo">
-                <a class="marca-logo">
-                    <img src="/TUTORIAS-FACCI/IMG/logouleam.png" alt="Logo FACCI">
-                </a>
-            </div>
-            <button class="btn-menu active">IC</button>
-            <div class="option-navBar active">
-                <div class="container-items">
-                    <a class="items_navBar active">INICIO</a>
-                    <a href="/TUTORIAS-FACCI/LOGIN/login-inicio.html" class="items_navBar active" id="login-item">DOCENTE</a>
-                </div>
-           </div>
+    <header>
+        <div class="LogoUleam">
+            <img src="/TUTORIAS-FACCI/IMG/logouleam.png">
+        </div>
+        <nav>
+            <a href="TUTORIAS-FACCI/INICIO/inicio-login-studen.html"><center><h3>Inicio</h3></center></a>
+            <a href="#"><button onclick=""><h3>Estudiante</h3></button></a>
         </nav>
     </header>
     <section class="content-activities">
@@ -111,7 +105,7 @@
                 </div>
                 
                 <div class="button-cont regresar">
-                    <a href="../menuD.html">
+                    <a href="/TUTORIAS-FACCI/DOCENTE/menuD.html">
                         <input type="button" name="regresar" value="Regresar" class="button" id="button-back">
                     </a>
                    
@@ -121,22 +115,14 @@
         <div id="error"></div>
     </section>
     <footer>
-        <div class="grid-ftt">
-            <div class="box column_grid-ftt">
-                <div class="content">
-                    <img src="/TUTORIAS-FACCI/IMG/logouleam.png" alt="Logo ULEAM">
-                </div>
-            </div>
-            <div class="box column_grid-ftt">
-                <div class="content">
-                    <div>
-                        <p class="text">ULEAM © Copyright 2022, Todos los derechos reservados - Universidad Laica Eloy Alfaro de Manabí <br>
-Dirección: Av. Circunvalación - Vía a San Mateo
-Manta - Manabí - Ecuador</p>
-                    </div>
-                </div>
-            </div>
-       </div>
+        <div class="LogoUleam2">
+            <img src="/TUTORIAS-FACCI/IMG/logouleam.png">
+        </div>
+        <nav class="navv">
+            <a href="#"><pre><center>ULEAM @ Copyright 2022, Todos los derechos reservados - Universidad Laica Eloy Alfaro de Manabí</center></pre></a>
+            <a href="#"><pre><center>Dirección: Av. Circunvalación - Vía a San Mateo</center></pre></a>
+            <a href="#"><pre><center>Manta - Manabí - Ecuador</center></pre></a>
+        </nav>
     </footer>        
 </body>
 </html>
