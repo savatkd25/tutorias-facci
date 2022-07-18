@@ -1,5 +1,7 @@
-.content-activities{
-    margin-top: 80px;
+@import url(style.css);
+.content-activities1{
+    margin-top: 40px;
+    height: 650px;
 }
 
 .title-activities{
@@ -11,9 +13,10 @@
 
 .title-activities h1{
     text-align: left;
-    font-family: "Signika Negative", sans-serif;
+    font-family: var(--fuente-1);
     font-size: 200%;
     width: 100%;
+    color: black;
 }
 
 main{
@@ -176,6 +179,6 @@ main{
     cursor: pointer;
     width: 90px;
     height: 50px;
-    border-radius: 15%;
+    border-radius: 25%;
     margin: 20px;
 }
