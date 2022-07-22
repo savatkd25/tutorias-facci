@@ -1,63 +1,62 @@
 @import url(style.css);
-.content-activities1{
-    margin-top: 40px;
-    height: 650px;
+html{
+    height: 100%;
 }
+body{
+    min-height: 100%;
+} 
 
+.activities{ /* Contenedor de body*/
+    display: block;
+    position: static;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(206, 206, 206, 0.568);
+}
 .title-activities{
-    padding: 40px 60px 0;
+    font-family: "Signika Negative", sans-serif;
+    margin: auto;
     height: 80px;
     width: auto;
-    display: block;
 }
-
 .title-activities h1{
     text-align: left;
     font-family: var(--fuente-1);
     font-size: 200%;
     width: 100%;
     color: black;
-}
-
-main{
-    margin: 0 4%;
-    padding: 20px;
-}
-.formulario{
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-flow:row wrap ;
-    justify-content: space-between;
-    padding: auto;
- 
-}
-.formulario__grupo{
-
-    justify-content: flex-start;
     margin-left: 20px;
 }
+.content-formulario{ /*Contenedor de formulario*/
+    width: 100%;
+    height: 100%;
+}
+.formulario{ /*Contenedor de form-activities*/
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:baseline;
+    padding: 0 20px;
+}
+
+.formulario__grupo{/*Contenedor de inputs */
+    margin: 1%;
+}
 .formulario__grupo-input{
-    padding: 20px;
     cursor: pointer;
     width: 100%;
 }
-.formulario__input-error{
-    font-family: "Noto Sans SC", sans-serif;
-    margin: 0 20px;
-    font-size: 15px;
-}
 .formulario-input{
     width: 100%;
-    background-color: rgb(206, 206, 205);
-    border: 1px solid rgb(206, 206, 205);
+    background-color: rgb(187, 187, 187);
+    border: 1px solid rgb(187, 187, 187);
     font-family: "Noto Sans SC", sans-serif;
-    line-height: 45px;
-    margin: 10px;
-    padding-left: 10px;
-
+    line-height: 50px;
+    padding: 0 10px 0;
+    font-size: 13px;
 }
-
+/*id de inputs*/
 #tema{
     width: 400px;
 
@@ -85,7 +84,6 @@ main{
     flex-grow: 1;
     flex-basis: 3%;
 }
-
 
 #select{
     width: 300px;
@@ -133,7 +131,6 @@ main{
     flex-grow: 2;
     flex-basis: 9%;
     width: auto;
-
 }
 .formulario__checkbox{
     padding-top: 20px ;
@@ -152,33 +149,38 @@ main{
 
 }
 
-.action-button{
-    display: flex;
-
-    position: relative;
-    padding: 0 40%;
-    margin: 60px;
-
-}
-
 #grupo__button{
-    display: flex;
     order: 10;
-    flex-grow: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
+}
+.contenedor-button{
+    display: flex;
     justify-content: center;
 }
 .formulario__grupo-button{
-    margin: 20px;
+    display: inline-block;
+    position: flex;
+    justify-content: center;
+}
+.formulario__button{
 
 }
-.formulario-button{
+.formulario__grupo-button input{
     font-family: "Signika Negative", sans-serif;
     background-color: rgb(66, 6, 122);
     color: rgb(255, 255, 255);
     cursor: pointer;
-    width: 90px;
+    width: 100%;
     height: 50px;
-    border-radius: 25%;
+    border-radius: 15%;
     margin: 20px;
+    font-size: 20px;
+    padding: 4%;
+}
+footer{
+    position: static;
+    margin: 0;
+    height: auto;
 }
