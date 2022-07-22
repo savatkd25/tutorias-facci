@@ -66,9 +66,9 @@ a button:hover{
 }
 
 
-
+/*---------------PIE DE PÁGINA---------*/
 footer{
-    margin-top: 100px;
+    margin-top: 40px;
     display: flex;
     bottom: 0;
     left: 0;
@@ -101,8 +101,14 @@ footer{
     cursor: none;
     font-family: Arial, Helvetica, sans-serif;
 }
+/*-----------------------------------------------*/
+
+
 /*TITULO*/
+/*-------------------------------*/
 .Titulo-Subir_Actividades{
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
     font-size: 25px;
 }
@@ -110,8 +116,12 @@ footer{
 .Contenido-Subir_Actividad{
     bottom: 300px;
 }
+/*-------------------------------*/
+
+
 
 /*Descripción*/
+/*-------------------------------*/
 .Descripcion{
     margin-left: 360px;
 }
@@ -126,15 +136,16 @@ footer{
     height: 120px;
     width: 700px;
     resize: none;
-    background: #d4d4d4;
+    background: #bcbbbb;
 }
-
+/*-------------------------------*/
 
 /*Agregar Archivo*/
 /*Input*/
 .Boton-Subir-1A{
+    position: relative;
     margin-left: -150px;
-    margin-top: -120px;
+    top: -135%;
 }
 
 .Boton-Subir-1A label{
@@ -146,7 +157,7 @@ footer{
 }
 
 .Contenido-A{
-    background: #d4d4d4;
+    background: #bcbbbb;
     border: 1px dashed rgb(116, 115, 115);
     height: 125px;
     width: 350px;
@@ -165,16 +176,28 @@ footer{
     width: 75px;
 }
 
+/*------MENSAJE DE SUBIR ARCHIVO------*/
 .Mensaje-1A{
+    position: relative;
     margin-left: 100px;
-    margin-top: -100px;
+    top: -50%;
     font-size: 14px;
 }
+
+.Mensaje-1A h3{
+    position: relative;
+    bottom: 20px;
+}
+
+.Mensaje-1A h5{
+    color: #dddada;
+}
+/*--------------------------------------*/
 
 .Body-Agregar_Archivo{
     margin-top: 40px;
     margin-left: 70px;
-    background: #d4d4d4;
+    background: #bcbbbb;
     height: 125px;
     width: 600px;
 }

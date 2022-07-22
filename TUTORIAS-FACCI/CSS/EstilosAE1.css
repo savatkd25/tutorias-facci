@@ -17,6 +17,7 @@ body{
 
 /*Titulo*/
 .Titulo-Actividades{
+    margin-top: 12px;
     text-align: center;
     font-size: 30px;
 }
@@ -46,6 +47,25 @@ input{
 
 /*Contenedores*/
 /*--------------------------------------------------*/
+.Contenedores button
+{
+    font-size: 20px;
+    color: white;
+    background-color: rgb(190, 20, 247);
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+}
+
+.Contenedores button:hover
+{
+    color: white;
+    background-color: rgb(17, 150, 150);
+    width: 150px;
+    height: 50px;
+}
 /*Contenedor 1*/
 .Contenedores .Contenedor-1{
     position: absolute;
@@ -66,17 +86,13 @@ input{
     margin-right: 340px;
 }
 
-.Contenedor-1 input[type="submit"]
+.Contenedor-1 button
 {
-    color: white;
-    background-color: rgb(190, 20, 247);
-    position: relative;
-    border-radius: 10px;
-    width: 150px;
-    height: 50px;
-    top: -50px;
-    left: 680px;
+    top: -103PX;
+    margin-left: -94px;
 }
+
+
 
 /*Contenedor 2*/
 .Contenedores .Contenedor-2{
@@ -98,17 +114,12 @@ input{
     margin-right: 340px;
 }
 
-.Contenedor-2 input[type="submit"]
+.Contenedor-2 button
 {
-    color: white;
-    background-color: rgb(190, 20, 247);
-    position: relative;
-    border-radius: 10px;
-    width: 150px;
-    height: 50px;
-    top: -50px;
-    left: 680px;
+    top: -72PX;
+    margin-left: -395px;
 }
+
 
 /*Contenedor 3*/
 .Contenedores .Contenedor-3{
@@ -130,17 +141,12 @@ input{
     margin-right: 340px;
 }
 
-.Contenedor-3 input[type="submit"]
+.Contenedor-3 button
 {
-    color: white;
-    background-color: rgb(190, 20, 247);
-    position: relative;
-    border-radius: 10px;
-    width: 150px;
-    height: 50px;
-    top: -50px;
-    left: 680px;
+    top: -65PX;
+    margin-left: 656px;
 }
+
 
 /*Contenedor 4*/
 .Contenedores .Contenedor-4{
@@ -162,155 +168,14 @@ input{
     margin-right: 340px;
 }
 
-.Contenedor-4 input[type="submit"]
+.Contenedor-4 button
 {
-    color: white;
-    background-color: rgb(190, 20, 247);
-    position: relative;
-    border-radius: 10px;
-    width: 150px;
-    height: 50px;
-    top: -50px;
-    left: 680px;
-}
-/*------------------------------------------------------*/
-
-/*Background input type=submit*/
-input[type="submit"]:hover
-{
-    color: white;
-    background-color: rgb(17, 150, 150);;
+    top: -64PX;
+    margin-left: 656px;
 }
 
 
-/*
-.Contenedores .Contenedor-1{
-    margin-top: 20px;
-    margin-left: 225px;
-    margin-bottom: 50px;
-    background: #ffc400d6;
-    display: flex;
-    width: 54%;
-    height: 50px;
-    align-items: center;
-    justify-content: space-evenly;
-    border-radius: 5px;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
-}
-
-.Contenedor-1 button{
-    color: white;
-    background-color: rgb(190, 20, 247);
-    border-radius: 5px;
-    width: 110px;
-    height: 50px;
-    cursor: pointer;
-    margin-left: 1000px;
-    margin-top: -15px;
-    border-color: none;
-    transition: .2s;
-}
-
-.Contenedores .Contenedor-2{
-    margin-top: 30px;
-    margin-left: 225px;
-    margin-bottom: 50px;
-    background: #ffc400d6;
-    display: flex;
-    width: 54%;
-    height: 50px;
-    align-items: center;
-    justify-content: space-evenly;
-    border-radius: 5px;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
-}
-
-.Contenedor-2 button{
-    color: white;
-    background-color: rgb(190, 20, 247);
-    border-radius: 5px;
-    width: 110px;
-    height: 50px;
-    cursor: pointer;
-    margin-left: 1000px;
-    margin-top: -15px;
-    border-color: none;
-    transition: .2s;
-}*/
-/*
-.Contenedores .Contenedor-3{
-    margin-top: 30px;
-    margin-left: 225px;
-    margin-bottom: 50px;
-    background: #ffc400d6;
-    display: flex;
-    width: 54%;
-    height: 50px;
-    align-items: center;
-    justify-content: space-evenly;
-    border-radius: 5px;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
-}
-
-.Contenedor-3 button{
-    color: white;
-    background-color: rgb(190, 20, 247);
-    border-radius: 5px;
-    width: 110px;
-    height: 50px;
-    cursor: pointer;
-    margin-left: 1000px;
-    margin-top: -15px;
-    border-color: none;
-    transition: .2s;
-}
-
-.Contenedores .Contenedor-4{
-    margin-top: 30px;
-    margin-left: 225px;
-    margin-bottom: 25px;
-    background: #ffc400d6;
-    display: flex;
-    width: 54%;
-    height: 50px;
-    align-items: center;
-    justify-content: space-evenly;
-    border-radius: 5px;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
-}
-
-.Contenedor-4 button{
-    color: white;
-    background-color: rgb(190, 20, 247);
-    border-radius: 5px;
-    width: 110px;
-    height: 50px;
-    cursor: pointer;
-    margin-left: 1000px;
-    margin-top: -15px;
-    border-color: none;
-    transition: .2s;
-}
-*/
-
-
-
-.Contenedor-Regresar button{
-    color: white;
-    background-color: rgb(190, 20, 247);
-    border-radius: 5px;
-    width: 120px;
-    height: 70px;
-    cursor: pointer;
-    margin-left: 680px;
-    margin-top: 74px;
-    margin-bottom: 15px;
-    border-color: none;
-    transition: .2s;
-    font-size: 20px;
-}
-
-a button{
+/*a button{
     color: white;
     background-color: rgb(18, 11, 122);
     border-radius: 5px;
@@ -319,7 +184,7 @@ a button{
     cursor: pointer;
     border-color: none;
     transition: .2s;
-}
+}*/
 
 .LogoUleam{
     display: flex;
@@ -336,15 +201,30 @@ a button{
     width: 190px;
 }
 /*Boton Regresar*/
-a button:hover{
+.Contenedor-Regresar button{
+    margin-top: 80px;
+    left: 300%;
+    color: white;
+    background-color: rgb(190, 20, 247);
+    border-radius: 5px;
+    width: 180px;
+    height: 70px;
+    cursor: pointer;
+    border-color: none;
+    transition: .2s;
+    font-size: 20px;
+}
+
+.Contenedor-Regresar button:hover{
     background-color: rgb(17, 150, 150);
-    width: 120px;
-    height: 60px;
+    width: 180px;
+    height: 70px;
     transition: .2s;
 }
 
 /*footer*/
 footer{
+    top: 600px;
     display: flex;
     bottom: 0;
     left: 0;
