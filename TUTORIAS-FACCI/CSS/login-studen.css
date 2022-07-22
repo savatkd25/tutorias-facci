@@ -81,6 +81,8 @@ h1{
 }
 
 body{
-  background-image: url(/TUTORIAS-FACCI/IMG/estudiante.png);
+  background-image: url(/TUTORIAS-FACCI/IMG/facci.jpeg) ;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
