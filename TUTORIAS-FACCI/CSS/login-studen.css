@@ -81,7 +81,7 @@ h1{
 }
 
 body{
-  background-image: url(/TUTORIAS-FACCI/IMG/facci.jpeg) ;
+  background-image: url(../IMG/facci.jpeg) ;
   background-repeat: no-repeat;
   background-size: 100%;
 }
