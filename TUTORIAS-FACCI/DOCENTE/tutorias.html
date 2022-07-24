@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <header>
+    <header class="nav">
         <div class="LogoUleam">
             <img src="../IMG/logouleam.png">
         </div>
@@ -25,7 +25,7 @@
 
     <div class="activities">
         <div class="title-activities">
-            <h1>Registro de tutorías</h1>
+            <h1><center>Registro de tutorías</center></h1>
         </div>
         <div class="content_formulario">
 
@@ -35,16 +35,18 @@
                 <!--Tema-->
                 <div class="formulario__grupo" id="grupo__tema">
                     <div class="formulario__grupo-input">
-                        <input type="text" name="Tema" placeholder="Temas" class="formulario-input" id="tema" required>
-                        <p class="formulario__input-error">Ingrese el tema</p>
+                    <p class="formulario__input-error">Ingrese el tema</p>
+                            <input type="text" name="Tema" placeholder="Temas" class="formulario-input" id="tema" required>
+                        
                     </div>
                 </div>
 
                 <!--Horas de trabajo-->
                 <div class="formulario__grupo" id="grupo__time">
                     <div class="formulario__grupo-input">
-                        <input type="text" name="horas" placeholder="Horas de trabajo" class="formulario-input" id="horas" required>
                         <p class="formulario__input-error">Describa las horas trabajadas</p>
+                        <input type="text" name="horas" placeholder="Horas de trabajo" class="formulario-input" id="horas" required>
+                        
                     </div>
                     
                 </div>
@@ -52,8 +54,9 @@
                 <!--Tareas asignadas-->
                 <div class="formulario__grupo" id="grupo__tareas">
                     <div class="formulario__grupo-input">
-                        <input type="text" name="tarea" placeholder="Tareas asignadas" class="formulario-input" id="tareas" required>
                         <p class="formulario__input-error">Describa las tareas designadas</p>
+                        <input type="text" name="tarea" placeholder="Tareas asignadas" class="formulario-input" id="tareas" required>
+                        
                     </div>
                     
                 </div>
@@ -61,6 +64,7 @@
                 <!--Grupo-->
                 <div class="formulario__grupo" id="grupo__group">
                     <div class="formulario__grupo-select">    
+                        <p class="formulario__input-error">Seleccione un grupo</p>
                         <label class="formulario__label"></label>
                         <select name="id-grupo" id="select" class="formulario-select" required>
                             <option value="">Grupos<i class="fa-solid fa-angle-down"></i></option>
@@ -70,15 +74,16 @@
                             <option value="Grupo 4">Grupo 4</option>
                             <option value="Grupo 5">Grupo 5</option>                            
                         </select>
-                        <p class="formulario__input-error">Seleccione un grupo</p>
+                        
                     </div>
                 </div>
                     
                 <!--Fecha de tutoría-->                
                 <div class="formulario__grupo" id="grupo__tutoria">
                     <div class="formulario__grupo-input">   
-                        <input type="date" name="date" id="date"  class="formulario-input" required>
                         <p class="formulario__input-error">Seleccione la fecha de la tutoría</p>
+                        <input type="date" name="date" id="date"  class="formulario-input" required>
+                        
                     </div>
                     
                 </div>
@@ -86,8 +91,9 @@
                 <!--Próxima tutoría-->
                 <div class="formulario__grupo" id="grupo__proxtutoria">
                     <div class="formulario__grupo-input">
-                        <input type="date" name="proxdate" id="proxdate"  class="formulario-input" required>
                         <p class="formulario__input-error">Seleccione la fecha de la  próxima tutoría</p>
+                        <input type="date" name="proxdate" id="proxdate"  class="formulario-input" required>
+                        
                     </div>
                     
                 </div>
@@ -95,8 +101,9 @@
                 <!--Observaciones-->
                 <div class="formulario__grupo" id="grupo__observaciones">
                     <div class="formulario__grupo-input">
-                        <input type="text" name="observation" placeholder="Observaciones" class="formulario-input" id="observaciones"  required>
                         <p class="formulario__input-error">Seleccione las correspondientes observaciones</p>
+                        <input type="text" name="observation" placeholder="Observaciones" class="formulario-input" id="observaciones"  required>
+                        
                     </div>
                     
                 </div>
