@@ -8,8 +8,7 @@
 
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/activDocnt.css">
-    <script src="https://kit.fontawesome.com/73f851add2.js" crossorigin="anonymous"></script>
-    <script src="../JS/actividades.js"></script>
+    <script src="../JS/actividadesdocnt.js"></script>
     <title>ACTIVIDADES</title>
 </head>
 <body>
@@ -89,7 +88,7 @@
                             <div class="formulario__grupo-button">
                                 <div class="formulario__button">
                                     <a href="#">
-                                        <input type="submit" name="confirmar" value="Confirmar" class="formulario-button" id="button-send" onclick="return enviarformulario();" >
+                                        <input type="submit" name="confirmar" value="Confirmar" class="formulario-button" id="button-send" >
                                     </a>
                                 </div>
                             </div>
@@ -107,28 +106,8 @@
                 </div>
             </form>
         </div>
-    </div>
-    <script>
-        (function () {
-          'use strict'
-          
-          var forms = document.querySelectorAll('.needs-validation')
-        
-          Array.prototype.slice.call(forms)
-            .forEach(function (form) {
-              form.addEventListener('submit', function (event) {
-                if (!form.checkValidity()) {
-                  event.preventDefault()
-                  event.stopPropagation()
-                }
-        
-                form.classList.add('was-validated')
-              }, false)
-            })
-        })()
-    </script>       
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" ></script>
+    </div> 
+    
 
     <footer>
         <div class="LogoUleam2">
