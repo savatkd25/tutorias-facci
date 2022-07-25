@@ -35,8 +35,8 @@
                 <!--Tema-->
                 <div class="formulario__grupo" id="grupo__tema">
                     <div class="formulario__grupo-input">
-                    <p class="formulario__input-error">Ingrese el tema</p>
-                            <input type="text" name="Tema" placeholder="Temas" class="formulario-input" id="tema" required>
+                        <!--<p class="formulario__input-error">Ingrese el tema</p>-->
+                        <input type="text" name="Tema" placeholder="Temas" class="formulario-input" id="tema" required>
                         
                     </div>
                 </div>
@@ -44,7 +44,7 @@
                 <!--Horas de trabajo-->
                 <div class="formulario__grupo" id="grupo__time">
                     <div class="formulario__grupo-input">
-                        <p class="formulario__input-error">Describa las horas trabajadas</p>
+                        <!--<p class="formulario__input-error">Describa las horas trabajadas</p>-->
                         <input type="text" name="horas" placeholder="Horas de trabajo" class="formulario-input" id="horas" required>
                         
                     </div>
@@ -54,7 +54,7 @@
                 <!--Tareas asignadas-->
                 <div class="formulario__grupo" id="grupo__tareas">
                     <div class="formulario__grupo-input">
-                        <p class="formulario__input-error">Describa las tareas designadas</p>
+                        <!--<p class="formulario__input-error">Describa las tareas designadas</p>-->
                         <input type="text" name="tarea" placeholder="Tareas asignadas" class="formulario-input" id="tareas" required>
                         
                     </div>
@@ -64,7 +64,7 @@
                 <!--Grupo-->
                 <div class="formulario__grupo" id="grupo__group">
                     <div class="formulario__grupo-select">    
-                        <p class="formulario__input-error">Seleccione un grupo</p>
+                        <!--<p class="formulario__input-error">Seleccione un grupo</p>-->
                         <label class="formulario__label"></label>
                         <select name="id-grupo" id="select" class="formulario-select" required>
                             <option value="">Grupos<i class="fa-solid fa-angle-down"></i></option>
@@ -81,7 +81,7 @@
                 <!--Fecha de tutoría-->                
                 <div class="formulario__grupo" id="grupo__tutoria">
                     <div class="formulario__grupo-input">   
-                        <p class="formulario__input-error">Seleccione la fecha de la tutoría</p>
+                        <!--<p class="formulario__input-error">Seleccione la fecha de la tutoría</p> -->
                         <input type="date" name="date" id="date"  class="formulario-input" required>
                         
                     </div>
@@ -91,7 +91,7 @@
                 <!--Próxima tutoría-->
                 <div class="formulario__grupo" id="grupo__proxtutoria">
                     <div class="formulario__grupo-input">
-                        <p class="formulario__input-error">Seleccione la fecha de la  próxima tutoría</p>
+                       <!--<p class="formulario__input-error">Seleccione la fecha de la  próxima tutoría</p> --> 
                         <input type="date" name="proxdate" id="proxdate"  class="formulario-input" required>
                         
                     </div>
@@ -101,7 +101,7 @@
                 <!--Observaciones-->
                 <div class="formulario__grupo" id="grupo__observaciones">
                     <div class="formulario__grupo-input">
-                        <p class="formulario__input-error">Seleccione las correspondientes observaciones</p>
+                        <!--<p class="formulario__input-error">Seleccione las correspondientes observaciones</p>-->
                         <input type="text" name="observation" placeholder="Observaciones" class="formulario-input" id="observaciones"  required>
                         
                     </div>
@@ -116,15 +116,13 @@
                         <div class="formulario__checkbox">
 
                             <div class="formulario__checkbox-select">
-                                <label class="formulario__label">Presencial
-                                    <input type="checkbox" name="presencial" id="checkbox__presencial" class="formulario-input">
-                                </label>
+                                <p class="formulario__label">Presencial</p>
+                                <input type="checkbox" name="presencial" id="checkbox__presencial" class="formulario-input">
                             </div>
 
                             <div class="formulario__checkbox-select">
-                                <label class="formulario__label">Virtual
-                                    <input type="checkbox" name="virtual" id="checkbox__virtual"class="formulario-input">
-                                </label>
+                                <p class="formulario__label">Virtual </p>
+                                <input type="checkbox" name="virtual" id="checkbox__virtual"class="formulario-input">
                             </div>
                         </div>
                         
@@ -135,15 +133,13 @@
                         <div class="formulario__checkbox">
 
                             <div class="formulario__checkbox-select">
-                                <label class="formulario__label">Total
-                                    <input type="checkbox" name="total" id="checkbox-total" class="formulario-input">
-                                </label>
+                                <p class="formulario__label">Total </p>
+                                <input type="checkbox" name="total" id="checkbox-total" class="formulario-input">
                             </div>
 
-                            <div class="content-select">
-                                <label for="select-parcial" class="label-parcial">Parcial
-                                    <input type="checkbox" name="parcial" id="checkbox-parcial" class="formulario-input">
-                                </label>
+                            <div class="formulario__checkbox-select">
+                                <p class="formulario__label">Parcial</p>
+                                <input type="checkbox" name="parcial" id="checkbox-parcial" class="formulario-input">
                             </div>
                         
                         </div>
