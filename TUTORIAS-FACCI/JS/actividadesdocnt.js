@@ -1,57 +1,33 @@
-const formulario = document.getElementById('formulario')
-const inputs = document.querySelectorAll('#formulario input')
-const button = document.getElementById('button-send')
-
-
-const tarea = document.getElementById('tarea')
-const correccion = document.getElementById('correccion')
-const observaciones = document.getElementById('observaciones')
-const date = document.getElementById('date')
-const select = document.getElementById('select')
-
-const formIsValid ={
-	tarea: false,
-	correccion: false,
-	observaciones: false,
-	date: false,
-	select: false
-}
-
-form.addEventListener('submit', (e) => {
-    e.preventDefault()
-    validateForm()
-})
-
-
-
-tarea.addEventListener('change', (e) => {
-	console.log(e.target.checked)
-    if(e.target.value.trim().length > 0) formIsValid.tarea = true
-})
-
-
-
-const validateForm = () => {
-    const formValues = Object.values(formIsValid)
-    const valid = formValues.findIndex(value => value == false)
-    if(valid == -1) form.submit()
-    else alert('Form invalid')
-}
-/*correccion.addEventListener('change', (e) => {
-	console.log(e.target.checked)
-    if(e.target.value.trim().length > 0) formIsValid.correccion = true
-})
-
-observaciones.addEventListener('change', (e) => {
-	console.log(e.target.checked)
-    if(e.target.value.trim().length > 0) formIsValid.observaciones = true
-})
-
-date.addEventListener('change', (e) => {
-	
-    if(e.target.value.trim().length > 0) formIsValid.date = true
-})
-select.addEventListener('change', (e) => {
-    
-    if(e.target.value.trim().length > 0) formIsValid.select = true
-})*/
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("formulario").addEventListener('submit', validarFormulario); 
+  });
+  
+  function validarFormulario(evento) {
+    evento.preventDefault();
+    var tarea = document.getElementById('tarea').value;
+    if(tarea.length == 0) {
+      alert('No has escrito nada en tarea');
+      return;
+    }
+    var correccion = document.getElementById('correccion').value;
+    if(correccion.length == 0) {
+      alert('No has escrito nada en correcciones');
+      return;
+    }
+    var observaciones = document.getElementById('observaciones').value;
+    if(observaciones.length == 0) {
+      alert('No has escrito nada en observaciones');
+      return;
+    }
+    var date = document.getElementById('date').value;
+    if(date.length == 0) {
+      alert('La fecha no es válida');
+      return;
+    }
+    var select = document.getElementById('select').value;
+    if(select.length == 0) {
+      alert('el grupo no es válida');
+      return;
+    }
+    this.submit();
+  }
