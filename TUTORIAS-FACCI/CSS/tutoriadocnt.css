@@ -1,0 +1,211 @@
+@import url(style.css);
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+} 
+
+.activities{ /* Contenedor de body*/
+    display: block;
+    position: static;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(206, 206, 206, 0.568);
+}
+.title-activities{
+    font-family: "Signika Negative", sans-serif;
+    margin: auto;
+    height: 80px;
+    width: auto;
+    padding-top: 20px;
+}
+.title-activities h1{
+    text-align: left;
+    font-family: var(--fuente-1);
+    font-size: 200%;
+    width: 100%;
+    color: black;
+    margin-left: 20px;
+}
+.content-formulario{ /*Contenedor de formulario*/
+    width: 100%;
+    height: 100%;
+}
+.formulario{ /*Contenedor de form-activities*/
+    margin: 0 150px;
+    display: grid;
+    grid-template-columns: 380px 340px 302px;
+    grid-template-rows: 100px 110px 150px 100px;
+    column-gap: 15px;
+    row-gap: 0;
+    align-items: start;
+    justify-content:baseline;
+
+}
+.formulario__grupo{/*Contenedor de inputs */
+    margin: 1%;
+}
+.formulario__grupo-input{
+    cursor: pointer;
+    width: 100%;
+}
+.formulario-input{
+    width: 100%;
+    background-color: rgb(187, 187, 187);
+    border: 1px solid rgb(187, 187, 187);
+    font-family: "Noto Sans SC", sans-serif;
+    line-height: 60px;
+    padding: 0 10px 0;
+    font-size: 15px;
+    
+}
+.formulario__input-error{
+    font-family: "Noto Sans SC", sans-serif;
+    font-size: 16px;
+    color: rgba(29, 28, 28, 0.795);
+    font-weight: 90px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-weight: bolder;
+    width: 100%;
+}
+/*id de inputs*/
+#tema{
+    width: 370px;
+
+}
+#grupo__tema{
+    grid-column: 1 / 2;
+}
+
+#grupo__time{
+    grid-column: 2 / 3 ;
+}
+#horas{
+    width: 330px;
+}
+
+#grupo__tareas{
+    grid-column: 3 / 4;
+}
+#tareas{
+    width: 300px;
+
+}
+
+#grupo__group{
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+#select{
+    width: 150px;
+    height: 60px;
+
+}
+#grupo__tutoria{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    
+}
+#date{
+    width: 170px;
+}
+
+#grupo__proxtutoria{
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+#proxdate{
+    width: 170px;
+
+}
+
+#observaciones{
+    height: 100px;
+    width: 370px;
+}
+#grupo__observaciones{
+    grid-row: 3 / 4;
+    grid-column: 1 / 2 ;
+
+}
+#grupo__tipotutoria{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+#grupo__tipotutoria h2{
+    color: rgba(29, 28, 28, 0.795);
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+.formulario__grupo-checkbox{
+
+
+}
+.formulario__grupo-checkbox p{
+    
+}
+
+.formulario__checkbox{
+
+}
+.formulario__checkbox-select{
+    display: flex;
+    justify-content:baseline;
+    margin: 15px;
+
+
+}
+.formulario__label{
+    font-size: 14px;
+}
+.formulario__grupo-checkbox{  
+
+    font-family: "Signika Negative", sans-serif;
+
+}
+
+#grupo__button{
+    grid-row: 4 / 5;
+    grid-column: 1 / 4;
+    width: 100%;
+}
+.contenedor-button{
+    display: flex;
+    justify-content: center;
+}
+.formulario__grupo-button{
+    display: inline-block;
+    position: flex;
+    justify-content: center;
+}
+.formulario__button{
+ 
+}
+.formulario-button{
+    font-family: "Signika Negative", sans-serif;
+    color: rgb(253, 253, 253);
+    font-weight: lighter;
+    background-color: rgb(11, 7, 63);
+    cursor: pointer;
+    width: 110px;
+    height: 60px;
+    border:2px;
+    border-radius: 9%;
+    margin: 0 20px;
+    font-size: 16px;
+    padding: 5%;
+}
+.formulario-button:hover{
+    background-color: rgba(9, 5, 66, 0.541);
+}
+footer{
+    position: static;
+    margin: 0;
+    height: auto;
+}
