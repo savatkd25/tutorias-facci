@@ -202,7 +202,7 @@ input{
 }
 /*Boton Regresar*/
 .Contenedor-Regresar button{
-    margin-top: 80px;
+    margin-top: 150px;
     left: 300%;
     color: white;
     background-color: rgb(190, 20, 247);
@@ -224,7 +224,7 @@ input{
 
 /*footer*/
 footer{
-    top: 650px;
+    top: 719px;
     display: flex;
     bottom: 0;
     left: 0;
