@@ -4,9 +4,14 @@
     box-sizing: border-box;
 }
 body{
+    font-family: sans-serif;
     background: #dbdbdb;
     margin: 0;
-    font-family: sans-serif;
+    overflow-y: auto;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    
 }
 .pantalla-d
 {
@@ -80,12 +85,7 @@ a button:hover{
     transition: .2s;
     
 }
-p{
-    font-size: 30px;
-  width: 50%;
-  margin: auto;
-  display: inline-block;
-}
+
 
 img{
     width: 50%;
@@ -97,7 +97,7 @@ img{
     display: flex;
 }
 .LogoUleam img{
-    margin-left: 40px;
+    margin-left: 30px;
     height: 80px;
     width: 285px;
 }

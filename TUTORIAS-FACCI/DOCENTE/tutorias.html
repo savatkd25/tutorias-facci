@@ -4,44 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/TUTORIAS-FACCI/CSS/style.css">
-    <link rel="stylesheet" href="/TUTORIAS-FACCI/CSS/tutoriadocnt.css">
-    <script src="/TUTORIAS-FACCI/JS/tutoriadocnt.js"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="stylesheet" href="../CSS/tutoriadocnt.css">
+    <script src="../JS/actividadesdocnt.js"></script>
     <title>TUTORIAS</title>
 </head>
 <body>
-    <header>
+
+    <header class="nav">
         <div class="LogoUleam">
-            <img src="/TUTORIAS-FACCI/IMG/logouleam.png">
+            <img src="../IMG/logouleam.png">
         </div>
         <nav>
-            <a href="/TUTORIAS-FACCI/INICIO/inicio-login-studen.html"><center><h3>Inicio</h3></center></a>
-            <a href="#"><button onclick=""><h3>Docente</h3></button></a>
+            <a href="../INICIO/inicio-login-studen.html"><center><h3>Inicio</h3></center></a>
+            <a href="../DOCENTE/MenuDocente.html"><button onclick=""><h3>Docente</h3></button></a>
         </nav>
     </header>
-    <section class="content-activities1">
+
+
+    <div class="activities">
         <div class="title-activities">
-            <h1>Registro de tutorías</h1>
+            <h1><center>Registro de tutorías</center></h1>
         </div>
-        <!--MAIN-->
-        <main>
+        <div class="content_formulario">
+
             <!--FORMULARIO-->
-            
             <form action="#" class="formulario" id="formulario">
 
                 <!--Tema-->
                 <div class="formulario__grupo" id="grupo__tema">
                     <div class="formulario__grupo-input">
+                        <!--<p class="formulario__input-error">Ingrese el tema</p>-->
                         <input type="text" name="Tema" placeholder="Temas" class="formulario-input" id="tema" required>
-                        <p class="formulario__input-error">Ingrese el tema</p>
+                        
                     </div>
                 </div>
 
                 <!--Horas de trabajo-->
                 <div class="formulario__grupo" id="grupo__time">
                     <div class="formulario__grupo-input">
+                        <!--<p class="formulario__input-error">Describa las horas trabajadas</p>-->
                         <input type="text" name="horas" placeholder="Horas de trabajo" class="formulario-input" id="horas" required>
-                        <p class="formulario__input-error">Describa las horas trabajadas</p>
+                        
                     </div>
                     
                 </div>
@@ -49,15 +54,17 @@
                 <!--Tareas asignadas-->
                 <div class="formulario__grupo" id="grupo__tareas">
                     <div class="formulario__grupo-input">
+                        <!--<p class="formulario__input-error">Describa las tareas designadas</p>-->
                         <input type="text" name="tarea" placeholder="Tareas asignadas" class="formulario-input" id="tareas" required>
-                        <p class="formulario__input-error">Describa las tareas designadas</p>
+                        
                     </div>
                     
                 </div>
-                     
+                    
                 <!--Grupo-->
                 <div class="formulario__grupo" id="grupo__group">
                     <div class="formulario__grupo-select">    
+                        <!--<p class="formulario__input-error">Seleccione un grupo</p>-->
                         <label class="formulario__label"></label>
                         <select name="id-grupo" id="select" class="formulario-select" required>
                             <option value="">Grupos<i class="fa-solid fa-angle-down"></i></option>
@@ -67,24 +74,26 @@
                             <option value="Grupo 4">Grupo 4</option>
                             <option value="Grupo 5">Grupo 5</option>                            
                         </select>
-                        <p class="formulario__input-error">Seleccione un grupo</p>
+                        
                     </div>
                 </div>
                     
                 <!--Fecha de tutoría-->                
                 <div class="formulario__grupo" id="grupo__tutoria">
                     <div class="formulario__grupo-input">   
+                        <!--<p class="formulario__input-error">Seleccione la fecha de la tutoría</p> -->
                         <input type="date" name="date" id="date"  class="formulario-input" required>
-                        <p class="formulario__input-error">Seleccione la fecha de la tutoría</p>
+                        
                     </div>
                     
                 </div>
-  
+
                 <!--Próxima tutoría-->
                 <div class="formulario__grupo" id="grupo__proxtutoria">
                     <div class="formulario__grupo-input">
+                       <!--<p class="formulario__input-error">Seleccione la fecha de la  próxima tutoría</p> --> 
                         <input type="date" name="proxdate" id="proxdate"  class="formulario-input" required>
-                        <p class="formulario__input-error">Seleccione la fecha de la  próxima tutoría</p>
+                        
                     </div>
                     
                 </div>
@@ -92,8 +101,9 @@
                 <!--Observaciones-->
                 <div class="formulario__grupo" id="grupo__observaciones">
                     <div class="formulario__grupo-input">
+                        <!--<p class="formulario__input-error">Seleccione las correspondientes observaciones</p>-->
                         <input type="text" name="observation" placeholder="Observaciones" class="formulario-input" id="observaciones"  required>
-                        <p class="formulario__input-error">Seleccione las correspondientes observaciones</p>
+                        
                     </div>
                     
                 </div>
@@ -106,15 +116,13 @@
                         <div class="formulario__checkbox">
 
                             <div class="formulario__checkbox-select">
-                                <label class="formulario__label">Presencial
-                                    <input type="checkbox" name="presencial" id="checkbox__presencial" class="formulario-input">
-                                </label>
+                                <p class="formulario__label">Presencial</p>
+                                <input type="checkbox" name="presencial" id="checkbox__presencial" class="formulario-input">
                             </div>
 
                             <div class="formulario__checkbox-select">
-                                <label class="formulario__label">Virtual
-                                    <input type="checkbox" name="virtual" id="checkbox__virtual"class="formulario-input">
-                                </label>
+                                <p class="formulario__label">Virtual </p>
+                                <input type="checkbox" name="virtual" id="checkbox__virtual"class="formulario-input">
                             </div>
                         </div>
                         
@@ -125,15 +133,13 @@
                         <div class="formulario__checkbox">
 
                             <div class="formulario__checkbox-select">
-                                <label class="formulario__label">Total
-                                    <input type="checkbox" name="total" id="checkbox-total" class="formulario-input">
-                                </label>
+                                <p class="formulario__label">Total </p>
+                                <input type="checkbox" name="total" id="checkbox-total" class="formulario-input">
                             </div>
 
-                            <div class="content-select">
-                                <label for="select-parcial" class="label-parcial">Parcial
-                                    <input type="checkbox" name="parcial" id="checkbox-parcial" class="formulario-input">
-                                </label>
+                            <div class="formulario__checkbox-select">
+                                <p class="formulario__label">Parcial</p>
+                                <input type="checkbox" name="parcial" id="checkbox-parcial" class="formulario-input">
                             </div>
                         
                         </div>
@@ -143,23 +149,29 @@
 
                 <!--botones-->        
                 <div class="formulario__grupo" id="grupo__button">
+                    <div class="contenedor-button">
 
-                    <div class="formulario__grupo-button">
-                        <div class="formulario__button-confirmar">
-                            <input type="submit" name="confirmar" value="confirmar" class="formulario-button" id="button-send" onclick="return enviarformulario();" >
+                        <div class="formulario__grupo-button">
+                            <div class="formulario__button">
+                                <a href="#">
+                                    <input type="submit" name="confirmar" value="Confirmar" class="formulario-button" id="button-send" onclick="return enviarformulario();" >
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="formulario__grupo-button">
+                            <div class="formulario__button">
+                                <a href="../DOCENTE/MenuDocente.html">
+                                    <input type="button" name="regresar" value="Regresar" class="formulario-button" id="button-back">
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    
-                    <div class="formulario__grupo-button">
-                        <a href="/TUTORIAS-FACCI/DOCENTE/menuD.html">
-                            <input type="button" name="regresar" value="Regresar" class="formulario-button" id="button-back">
-                        </a>
-                    </div>
                 </div>
-
             </form>
-        </main>
-    </section>
+        </div>
+    </div>
+
     <script>
         (function () {
           'use strict'
@@ -178,18 +190,19 @@
               }, false)
             })
         })()
-        </script>       
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" ></script>
-        <footer>
-            <div class="LogoUleam2">
-                <img src="/TUTORIAS-FACCI/IMG/logouleam.png">
-            </div>
-            <nav class="navv">
-                <a href="#"><pre><center>ULEAM @ Copyright 2022, Todos los derechos reservados - Universidad Laica Eloy Alfaro de Manabí</center></pre></a>
-                <a href="#"><pre><center>Dirección: Av. Circunvalación - Vía a San Mateo</center></pre></a>
-                <a href="#"><pre><center>Manta - Manabí - Ecuador</center></pre></a>
-            </nav>
-        </footer>       
+    </script>       
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" ></script>
+
+    <footer>
+        <div class="LogoUleam2">
+            <img src="../IMG/logouleam.png">
+        </div>
+        <nav class="navv">
+            <a href="#"><pre><center>ULEAM @ Copyright 2022, Todos los derechos reservados - Universidad Laica Eloy Alfaro de Manabí</center></pre></a>
+            <a href="#"><pre><center>Dirección: Av. Circunvalación - Vía a San Mateo</center></pre></a>
+            <a href="#"><pre><center>Manta - Manabí - Ecuador</center></pre></a>
+        </nav>
+    </footer>       
 </body>
 </html>
