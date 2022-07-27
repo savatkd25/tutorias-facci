@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/estilos.css">
     <link rel="stylesheet" href="../CSS/tutoriadocnt.css">
-    <script src="../JS/actividadesdocnt.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" ></script>
     <title>TUTORIAS</title>
 </head>
 <body>
@@ -36,7 +36,7 @@
                 <div class="formulario__grupo" id="grupo__tema">
                     <div class="formulario__grupo-input">
                         <p class="formulario__input-error">Ingrese el tema</p>
-                        <input type="text" name="Tema" placeholder="Temas" class="formulario-input" id="tema" required>
+                        <input type="text" name="Tema" placeholder="Temas" class="formulario-input" id="tema">
                         
                     </div>
                 </div>
@@ -45,7 +45,7 @@
                 <div class="formulario__grupo" id="grupo__time">
                     <div class="formulario__grupo-input">
                         <p class="formulario__input-error">Describa las horas trabajadas</p>
-                        <input type="text" name="horas" placeholder="Horas de trabajo" class="formulario-input" id="horas" required>
+                        <input type="text" name="horas" placeholder="Horas de trabajo" class="formulario-input" id="horas">
                         
                     </div>
                     
@@ -55,7 +55,7 @@
                 <div class="formulario__grupo" id="grupo__tareas">
                     <div class="formulario__grupo-input">
                         <p class="formulario__input-error">Describa las tareas designadas</p>
-                        <input type="text" name="tarea" placeholder="Tareas asignadas" class="formulario-input" id="tareas" required>
+                        <input type="text" name="tarea" placeholder="Tareas asignadas" class="formulario-input" id="tareas">
                         
                     </div>
                     
@@ -66,7 +66,7 @@
                     <div class="formulario__grupo-select">    
                         <p class="formulario__input-error">Seleccione un grupo</p>
                         <label class="formulario__label"></label>
-                        <select name="id-grupo" id="select" class="formulario-select" required>
+                        <select name="id-grupo" id="select" class="formulario-select">
                             <option value="">Grupos<i class="fa-solid fa-angle-down"></i></option>
                             <option value="Grupo 1">Grupo 1</option>
                             <option value="Grupo 2">Grupo 2</option>
@@ -82,7 +82,7 @@
                 <div class="formulario__grupo" id="grupo__tutoria">
                     <div class="formulario__grupo-input">   
                         <p class="formulario__input-error">Fecha de tutoría</p>
-                        <input type="date" name="date" id="date"  class="formulario-input" required>
+                        <input type="date" name="date" id="date"  class="formulario-input">
                         
                     </div>
                     
@@ -92,7 +92,7 @@
                 <div class="formulario__grupo" id="grupo__proxtutoria">
                     <div class="formulario__grupo-input">
                         <p class="formulario__input-error">Fecha de próxima tutoría</p> 
-                        <input type="date" name="proxdate" id="proxdate"  class="formulario-input" required>
+                        <input type="date" name="proxdate" id="proxdate"  class="formulario-input">
                         
                     </div>
                     
@@ -102,7 +102,7 @@
                 <div class="formulario__grupo" id="grupo__observaciones">
                     <div class="formulario__grupo-input">
                         <p class="formulario__input-error">Escriba las observaciones</p>
-                        <input type="text" name="observation" placeholder="Observaciones" class="formulario-input" id="observaciones"  required>
+                        <input type="text" name="observation" placeholder="Observaciones" class="formulario-input" id="observaciones">
                         
                     </div>
                     
@@ -171,29 +171,11 @@
             </form>
         </div>
     </div>
-
-    <script>
-        (function () {
-          'use strict'
-          
-          var forms = document.querySelectorAll('.needs-validation')
-        
-          Array.prototype.slice.call(forms)
-            .forEach(function (form) {
-              form.addEventListener('submit', function (event) {
-                if (!form.checkValidity()) {
-                  event.preventDefault()
-                  event.stopPropagation()
-                }
-        
-                form.classList.add('was-validated')
-              }, false)
-            })
-        })()
-    </script>       
+    
+    <script src="../JS/actividadesdocnt.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" ></script>
-
+    
     <footer>
         <div class="LogoUleam2">
             <img src="../IMG/logouleam.png">
@@ -206,3 +188,4 @@
     </footer>       
 </body>
 </html>
+
