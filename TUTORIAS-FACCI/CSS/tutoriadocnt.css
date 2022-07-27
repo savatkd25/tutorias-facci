@@ -62,7 +62,6 @@ body{
 }
 .formulario__input-error{
     font-family: "Signika Negative", sans-serif;
-    font-size: 16px;
     color: rgba(29, 28, 28, 0.795);
     font-weight: 90px;
     margin-bottom: 10px;
