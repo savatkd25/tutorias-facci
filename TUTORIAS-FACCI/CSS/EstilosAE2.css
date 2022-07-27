@@ -151,10 +151,10 @@ footer{
 .Boton-Subir-1A label{
     font-size: 20px;
 }
-.Boton-Subir-1A input{
+/*.Boton-Subir-1A input{
     margin-left: 520px;
     margin-top: 30px;
-}
+}*/
 
 .Contenido-A{
     background: #bcbbbb;
@@ -194,6 +194,37 @@ footer{
 }
 /*--------------------------------------*/
 
+/*---------Boton Upload file----------*/
+.Button-upload{
+    position: relative;
+    padding: 11px 19px;
+    font-size: 15px;
+    line-height: 1.5;
+    border-radius: 80px;
+    color: #fff;
+    background-color: #232325;
+    border: 0;
+    transform: translate(262.5%, 13%);
+    overflow: hidden;
+    width: 200px;
+}
+
+.Button-upload input[type="file"]{
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: scale(3);
+    opacity: 0;
+}
+
+.Button-upload:hover{
+    background-color: rgb(17, 150, 150);
+    transition: .2s;
+    border-color: #232325;
+}
+
+/*--------------------------------------*/
 .Body-Agregar_Archivo{
     margin-top: 40px;
     margin-left: 70px;
