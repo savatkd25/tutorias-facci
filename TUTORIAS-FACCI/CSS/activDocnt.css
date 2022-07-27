@@ -1,0 +1,144 @@
+@import url(style.css);
+body{
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+} 
+
+.activities{ /* Contenedor de body*/
+    display: inline-block;
+    position: absolute;
+    margin-top: 75px;
+    width: 100%;
+    height: auto;
+    background-color: rgba(206, 206, 206, 0.568);
+}
+.title-activities{
+    font-family: "Signika Negative", sans-serif;
+    margin: auto;
+    height: 80px;
+    width: auto;
+}
+.title-activities h1{
+    text-align: center;
+    font-size: 200%;
+    padding: 20px;
+    color: black;
+}
+.content-formulario{
+    width: 100%;
+    height: 100%;
+}
+.content__form{ /*Contenedor de formulario*/
+
+    height: 100%;
+    margin: 0 150px;
+}
+.formulario{ /*Contenedor de form-activities*/
+
+}
+#formulario{ /*Contenedor del grupo de inputs contenedor flex*/
+    display: grid;
+    width: 100%;
+    grid-template-columns: 200px 200px 1fr 1fr;
+    grid-template-rows: 115px 110px 120px;
+    column-gap: 15px;
+    row-gap: 0;
+    align-items: start;
+    justify-content:baseline;
+    padding: 0 20px;
+
+
+}
+.formulario__grupo{/*Contenedor de inputs */
+    margin: 1%;
+}
+.formulario__grupo-input{
+    cursor: pointer;
+    width: 100%;
+}
+.formulario-input{
+    width: 100%;
+    background-color: rgb(206, 206, 205);
+    border: 1px solid rgb(206, 206, 205);
+    font-family: "Noto Sans SC", sans-serif;
+    line-height: 60px;
+    padding: 0 10px 0;
+    font-size: 14px;
+}
+ 
+/* id de los inputs*/
+#grupo__tarea{
+    grid-column: 1 / 3;
+}
+
+#grupo__correcion{
+    grid-column: 3 / 4;
+}
+
+#grupo__observaciones{
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+}
+#observaciones{
+    width: 250px;
+    height: 150px;
+}
+#date{
+    width: 150px;
+}
+#select{
+    width: 160px;
+    height: 60px;
+    font-size: 14px;
+}
+
+p{
+    font-family: "Noto Sans SC", sans-serif;
+    font-size: 16px;
+    color: rgba(29, 28, 28, 0.795);
+    font-weight: 90px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-weight: bolder;
+    width: 100%;
+}
+#grupo__button{
+    grid-column: 1 / 5;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.contenedor-button{
+    display: flex;
+    justify-content: center;
+}
+.formulario__grupo-button{
+    display: inline-block;
+    position: flex;
+    justify-content: center;
+}
+
+.formulario-button{
+    font-family: "Signika Negative", sans-serif;
+    color: rgb(253, 253, 253);
+    font-weight: lighter;
+    background-color: rgb(11, 7, 63);
+    cursor: pointer;
+    width: 110px;
+    height: 60px;
+    border:2px;
+    border-radius: 5%;
+    margin: 0 20px;
+    font-size: 16px;
+    padding: 5%;
+}
+.formulario-button:hover{
+    background-color: rgba(9, 5, 66, 0.541);
+}
+
+footer{
+    position: absolute;
+    margin: 0;
+    height: auto;
+}
