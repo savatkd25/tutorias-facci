@@ -1,4 +1,4 @@
-/*const formulario = document.getElementById('formulario');
+const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
 
 const expresiones = {
@@ -60,66 +60,3 @@ formulario.addEventListener('submit', (e) => {
 
 
 });
-
-
-
-
-
-
-function validar(){
-	const tarea = document.getElementById('tarea').value;
-	const correccion = document.getElementById('correccion').value;
-	const observaciones = document.getElementById('observaciones').value;
-	const fecha = document.getElementById('date').value;
-	const select = document.getElementById('select').value;
-
-
-	const formIsValid ={
-		tarea: false,
-		correccion: false,
-		observaciones: false,
-		fecha: false,
-		select: false
-	}
-
-	tarea.addEventListener('change', (e) => {
-    	if(e.target.value.trim().length > 0) formIsValid.tarea = true
-	})
-	correccion.addEventListener('change', (e) => {
-    	if(e.target.value.trim().length > 0) formIsValid.correccion = true
-	})
-	observaciones.addEventListener('change', (e) => {
-    	if(e.target.value.trim().length > 0) formIsValid.observaciones = true
-	})
-	fecha.addEventListener('change', (e) => {
-    	if(e.target.value.trim().length > 0) formIsValid.fecha = true
-	})
-	select.addEventListener('change', (e) => {
-    	if(e.target.value.trim().length > 0) formIsValid.select = true
-	})
-
-	const validateForm = (e) => {
-		const formValues = Object.values(formIsValid)
-		const valid = formValues.findIndex(value => value == false)
-		if(valid == -1) form.submit(e)
-		else alert('Form invalid')
-	}
-	
-	form.addEventListener('submit', (e) => {
-		e.preventDefault()
-		validateForm()
-	})
-
-}
-
-*/
-
-
-
-	const formulario = document.getElementById('formulario');
-	const inputs = document.querySelectorAll('#formulario input');
-
-	form.addEventListener('submit', (e) => {
-		e.preventDefault()
-		validateForm()
-	})

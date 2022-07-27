@@ -4,23 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/estilos.css">
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" ></script>
     <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/navdocnt.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
     <link rel="stylesheet" href="../CSS/activDocnt.css">
+    <script src="https://kit.fontawesome.com/73f851add2.js" crossorigin="anonymous"></script>
+    <script src="../JS/actividadesdocnt.js"></script>
     <title>ACTIVIDADES</title>
 </head>
 <body>
 
     <header>
-        <div class="LogoUleam">
-            <img src="../IMG/logouleam.png">
+        <div class="header-content">
+            <div class="logo">
+                <img src="../IMG/logo_.png">
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li href="#" class="inicio">Inicio</li>
+                        <li href="#" class="redit_docente">Docente</li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <nav>
-            <a href="../INICIO/inicio-login-studen.html"><center><h3>Inicio</h3></center></a>
-            <a href="../DOCENTE/MenuDocente.html"><button onclick=""><h3>Docente</h3></button></a>
-        </nav>
     </header>
 
     <div class="activities">
@@ -29,13 +36,15 @@
         </div>
         <div class="content_formulario">
             <!--FORMULARIO-->
-           <div class="content__form">
-                <form action="#" class="formulario" id="formulario">
-                <!-- <div class="form-activities" id="content__formulario-input">--> 
+            
+            <form action="#" class="formulario" id="formulario">
+                <div class="form-activities">
+
                     <!--Tarea-->
                     <div class="formulario__grupo" id="grupo__tarea">
                         <div class="formulario__grupo-input">
-                            <input type="text" name="Tarea" placeholder="Tarea" class="formulario-input" id="tarea" >
+                            <input type="text" name="Tarea" placeholder="Tarea" class="formulario-input" id="tarea" required>
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
                             <p class="formulario__input-error">Ingrese el tema de la tarea</p>
                         </div>
                     </div>
@@ -43,7 +52,8 @@
                     <!--Corrección de metodología-->
                     <div class="formulario__grupo" id="grupo__method">
                         <div class="formulario__grupo-input">
-                            <input type="text" name="correction" placeholder="Corrección de metodología" class="formulario-input" id="correccion" >
+                            <input type="text" name="correction" placeholder="Corrección de metodología" class="formulario-input" id="correccion" required>
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
                             <p class="formulario__input-error">Ingrese correciones</p>
                         </div>
                     </div>
@@ -51,7 +61,8 @@
                     <!--Observaciones-->
                     <div class="formulario__grupo" id="grupo__observaciones">
                         <div class="formulario__grupo-input">
-                            <input type="text" name="observation" placeholder="Observaciones" class="formulario-input" id="observaciones" >
+                            <input type="text" name="observation" placeholder="Observaciones" class="formulario-input" id="observaciones" required>
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
                             <p class="formulario__input-error">Ingrese observaciones</p>
                         </div>
                     </div>
@@ -59,7 +70,8 @@
                     <!--Fecha-->
                     <div class="formulario__grupo" id="grupo__date">
                         <div class="formulario__grupo-input">
-                            <input type="date" name="date" id="date"  class="formulario-input" >
+                            <input type="date" name="date" id="date"  class="formulario-input" required>
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
                             <p class="formulario__input-error">Ingrese fecha</p>
                         </div>
                     </div>
@@ -68,7 +80,7 @@
                     <div class="formulario__grupo" id="grupo__group">
                         <div class="formulario__grupo-select">    
                             <label class="formulario__label"></label>
-                            <select name="id-grupo" id="select" class="formulario-select">
+                            <select name="id-grupo" id="select" class="formulario-select" required>
                                 <option value="">Grupos<i class="fa-solid fa-angle-down"></i></option>
                                 <option value="Grupo 1">Grupo 1</option>
                                 <option value="Grupo 2">Grupo 2</option>
@@ -76,54 +88,70 @@
                                 <option value="Grupo 4">Grupo 4</option>
                                 <option value="Grupo 5">Grupo 5</option>                            
                             </select>
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
                             <p class="formulario__input-error">Seleccione un grupo</p>
                         </div>
                     </div>
 
                     <!--Botones-->
                     <div class="formulario__grupo" id="grupo__button">
-                        <div class="contenedor-button">
 
-                            <div class="formulario__grupo-button">
-                                <div class="formulario__button">
-                                    <a href="#">
-                                        <input type="submit" name="confirmar" value="Confirmar" class="formulario-button" id="button-send" >
-                                    </a>
-                                </div>
-                            </div>
-                                
-                            <div class="formulario__grupo-button">
-                                <div class="formulario__button">
-                                    <a href="../DOCENTE/MenuDocente.html">
-                                        <input type="button" name="regresar" value="Regresar" class="formulario-button" id="button-back">
-                                    </a>
-                                </div>
+                        <div class="formulario__grupo-button">
+                            <div class="formulario__button-confirmar">
+                                <input type="submit" name="confirmar" value="confirmar" class="formulario-button" id="button-send" onclick="return enviarformulario();" >
                             </div>
                         </div>
+                        
+                        <div class="formulario__grupo-button">
+                            <a href="../menuD.html">
+                                <input type="button" name="regresar" value="Regresar" class="formulario-button" id="button-back">
+                            </a>
+                        </div>
                     </div>
-
-                </form>
-            </div>
+                </div>
+                
+            </form>
         </div>
     </div>
-
-  
-    <script src="../JS/actividadesdocnt.js" type="text/javascript"></script> 
-    
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" ></script>
+    <script>
+        (function () {
+          'use strict'
+          
+          var forms = document.querySelectorAll('.needs-validation')
+        
+          Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+              form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                  event.preventDefault()
+                  event.stopPropagation()
+                }
+        
+                form.classList.add('was-validated')
+              }, false)
+            })
+        })()
+        </script>       
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" ></script>
 
     <footer>
-        <div class="LogoUleam2">
-            <img src="../IMG/logouleam.png">
-        </div>
-        <nav class="navv">
-            <a href="#"><pre><center>ULEAM @ Copyright 2022, Todos los derechos reservados - Universidad Laica Eloy Alfaro de Manabí</center></pre></a>
-            <a href="#"><pre><center>Dirección: Av. Circunvalación - Vía a San Mateo</center></pre></a>
-            <a href="#"><pre><center>Manta - Manabí - Ecuador</center></pre></a>
-        </nav> 
-    </footer>  
-
-
+        <div class="grid-ftt">
+            <div class="box column_grid-ftt">
+                <div class="content">
+                    <img src="../IMG/logo_.png" alt="Logo ULEAM">
+                </div>
+            </div> 
+            <div class="box column_grid-ftt">
+                <div class="content">
+                    <div>
+                        <p class="text">ULEAM © Copyright 2022, Todos los derechos reservados - Universidad Laica Eloy Alfaro de Manabí <br>
+Dirección: Av. Circunvalación - Vía a San Mateo
+Manta - Manabí - Ecuador</p>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </footer>        
 </body>
 </html>
