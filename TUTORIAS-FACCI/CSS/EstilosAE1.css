@@ -32,7 +32,7 @@ a{
 }
 
 .Contenedores{
-    margin-top: 350px;
+    margin-top: 125px;
 }
 
 /*Inputs*/
@@ -84,6 +84,7 @@ input{
     outline: none;
     padding: 0 25px;
     margin-right: 340px;
+    transform: translate(0%, -275%);
 }
 
 .Contenedor-1 button
@@ -112,6 +113,7 @@ input{
     outline: none;
     padding: 0 25px;
     margin-right: 340px;
+    transform: translate(0%, -200%);
 }
 
 .Contenedor-2 button
@@ -139,6 +141,7 @@ input{
     outline: none;
     padding: 0 25px;
     margin-right: 340px;
+    transform: translate(0%, -125%);
 }
 
 .Contenedor-3 button
@@ -166,6 +169,7 @@ input{
     outline: none;
     padding: 0 25px;
     margin-right: 340px;
+    transform: translate(0%, -50%);
 }
 
 .Contenedor-4 button
@@ -174,7 +178,23 @@ input{
     margin-left: 656px;
 }
 
+/*-------Botones Subir Tarea----------*/
+.B1-AE{
+    transform: translate(625%, -206%);
+}
 
+.B2-AE{
+    transform: translate(475%, -55%);
+}
+
+.B3-AE{
+    transform: translate(325%, 93%);
+}
+
+.B4-AE{
+    transform: translate(175%, 245%);
+}
+/*--------------------------------------*/
 /*a button{
     color: white;
     background-color: rgb(18, 11, 122);
@@ -224,7 +244,7 @@ input{
 
 /*footer*/
 footer{
-    top: 719px;
+    top: 580px;
     display: flex;
     bottom: 0;
     left: 0;
