@@ -54,6 +54,7 @@ h1{
 /*para el boton */
 .log-btn{
   background:#ffffff;
+  
   width:100%;
   font-size:16px;
   height:50px;
@@ -61,10 +62,8 @@ h1{
   color:rgb(168, 38, 38);
   text-decoration:none;
   border-color: rgb(168, 38, 38);;
-  
+  justify-content: center;
 }
-
-
 
 /*para el olvide mi contraseña*/
 .link{

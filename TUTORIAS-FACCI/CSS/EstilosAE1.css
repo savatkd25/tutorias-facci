@@ -49,6 +49,8 @@ input{
 /*--------------------------------------------------*/
 .Contenedores button
 {
+    margin-top: 80px;
+    left: 100%;
     font-size: 20px;
     color: white;
     background-color: rgb(190, 20, 247);
@@ -71,7 +73,7 @@ input{
     position: absolute;
     top: 50%;
     left: 50%;
-    widows: 500px;
+    widows: 700px;
     transform: translate(-50%, -150%);
 }
 
@@ -222,8 +224,8 @@ input{
 }
 /*Boton Regresar*/
 .Contenedor-Regresar button{
-    margin-top: 150px;
-    left: 300%;
+    margin-top: 250px;
+    left: 400%;
     color: white;
     background-color: rgb(190, 20, 247);
     border-radius: 5px;
