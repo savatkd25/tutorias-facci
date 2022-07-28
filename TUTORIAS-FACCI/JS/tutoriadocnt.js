@@ -39,6 +39,16 @@ document.addEventListener("DOMContentLoaded", function() {
 		alert('No has escrito nada en observaciones');
       return;
     }
- 
+  if(!document.querySelector('input[name="tipo"]:checked')) {
+    alert('Error, rellena el campo tipo tutoria');
+    hasError = true;
+    return
+    }
+  if(!document.querySelector('input[name="tiempo"]:checked')) {
+    alert('Error, rellena el campo tiempo tutoria');
+    hasError = true;
+    return
+    }
+   
     this.submit();
   }

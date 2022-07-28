@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/login-studen.css">
-    <script src="../JS/login.js" type="text/javascript"></script>
-    <title>LOGIN ESTUDIANTE</title>
+    <title>LOGIN DOCENTE</title>
 </head>
 <body>
     <header>
@@ -15,24 +15,27 @@
             <img src="../IMG/logouleam.png">
         </div>
         <nav class="NAV">
-            <a href="../INICIO/inicio.html"><center><h3>Inicio</h3></center></a>
-     </nav>
-        <form action="../Db.php">
+            <a href="../LOGIN/login-inicio.html"><center><h3>Inicio</h3></center></a>
+            
+        </nav>
         <div class="login-form">
-            <h1>Iniciar Sesion </h1>
-            <h1>Estudiante </h1>
+            <h1>Iniciar Sesión </h1>
+            <h1>Estudiante</h1>
             <div class="form-group ">
               <input type="text" class="form-control" placeholder="Usuario " id="UserName" required>
               <i class="fa fa-user"></i>
             </div>
             <div class="form-group log-status">
               <input type="password" class="form-control" placeholder="Contraseña" id="Passwod" required>
-              <i class="fa-solid fa-eye-slash"></i>
-            </div> 
-            <a class="link" href="#">Forgort your password?</a>    
+              <span class="icon-eye">
+                <i class="fa-solid fa-eye-slash"></i>
+              </span>
+            </div>
+            <a class="link" href="#">Forgort your password?</a>
             <a href="../ESTUDIANTE/MenuE.html" button type="button"  class="log-btn"  >Entrar </button></a>
+            
+            
         </div>
-    </form>
     </header>
  
 </body>
