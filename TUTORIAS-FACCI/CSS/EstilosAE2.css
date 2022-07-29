@@ -1,6 +1,6 @@
 body{
     font-family: sans-serif;
-    background: #ffffff;
+    background: #d4d4d4;
     margin: 0;
     padding: 0;
 }
@@ -33,18 +33,25 @@ header{
 }
 
 /*BOTON ACEPTAR y BOTON REGRESAR*/
+/*--------------------------------------------------------*/
+.Botones-Aceptar-Regresar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .B1{
     font-size: 18px;
     background-color: rgb(190, 20, 247);
-    position: absolute;
-    transform: translate(500%, 75%);
+    position: relative;
+    transform: translate(0%, 120%);
 }
 
 .B2{
     font-size: 18px;
     background-color: rgb(190, 20, 247);
-    position: absolute;
-    transform: translate(700%, 13%);
+    position: relative;
+    transform: translate(0%, 120%);
 }
 
 a button{
@@ -107,15 +114,11 @@ footer{
 /*TITULO*/
 /*-------------------------------*/
 .Titulo-Subir_Actividades{
-    margin-top: 20px;
-    margin-bottom: 20px;
     text-align: center;
     font-size: 25px;
+    transform: translate(0%, 35%);
 }
 
-.Contenido-Subir_Actividad{
-    bottom: 300px;
-}
 /*-------------------------------*/
 
 
@@ -123,25 +126,50 @@ footer{
 /*Descripción*/
 /*-------------------------------*/
 .Descripcion{
-    margin-left: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(0%, 25%);
 }
 
 .Descripcion label{
     font-size: 20px;
-    margin-left: -20px;
+    transform: translate(-5%, -160%);
 }
 .Descripcion textarea{
-    margin-top: -20px;
-    margin-left: 90px;
     height: 120px;
     width: 700px;
     resize: none;
     background: #bcbbbb;
+    transform: translate(0%, 10%);
 }
 /*-------------------------------*/
 
 /*Agregar Archivo*/
+/*--------------------------------------------------------------------------------------------------------*/
 /*Input*/
+.Agregar_Archivo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(0%, 25%);
+}
+
+.Body-Agregar_Archivo{
+    margin-top: 40px;
+    margin-left: 70px;
+    background: #bcbbbb;
+    height: 125px;
+    width: 600px;
+}
+
+.Contenido-A{
+    background: #bcbbbb;
+    border: 1px dashed rgb(116, 115, 115);
+    height: 125px;
+    width: 350px;
+}
+
 .Boton-Subir-1A{
     position: relative;
     margin-left: -150px;
@@ -151,24 +179,7 @@ footer{
 .Boton-Subir-1A label{
     font-size: 20px;
 }
-/*.Boton-Subir-1A input{
-    margin-left: 520px;
-    margin-top: 30px;
-}*/
-
-.Contenido-A{
-    background: #bcbbbb;
-    border: 1px dashed rgb(116, 115, 115);
-    height: 125px;
-    width: 350px;
-}
-
-.Agregar_Archivo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
+/**/
 .LogoIcono img{
     margin-top: 20px;
     margin-left: 10px;
@@ -190,7 +201,7 @@ footer{
 }
 
 .Mensaje-1A h5{
-    color: #dddada;
+    color: #e1dfdf;
 }
 /*--------------------------------------*/
 
@@ -224,12 +235,5 @@ footer{
     border-color: #232325;
 }
 
-/*--------------------------------------*/
-.Body-Agregar_Archivo{
-    margin-top: 40px;
-    margin-left: 70px;
-    background: #bcbbbb;
-    height: 125px;
-    width: 600px;
-}
+/*--------------------------------------------------------------------------------------------------------*/
 

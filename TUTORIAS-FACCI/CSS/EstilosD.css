@@ -55,7 +55,7 @@ h2 img{
     width: 390px;
 }
 
-.pngnombre{
+.pngnombre img{
     height: 300px;
     width: 300px;
     text-align: center;
@@ -89,7 +89,10 @@ a button:hover{
     
 }
 
-
+.docente{
+    text-align: center;
+    transform: translate(-176px, 402px);
+}
 img{
     width: 10%;
     margin-top: auto;
